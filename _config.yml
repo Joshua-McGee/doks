@@ -1,0 +1,50 @@
+#site metatdata do not change!
+repository: Joshua-McGee/digitalcontent.github.io
+url: https://joshua-mcgee.github.io
+
+
+# Theme settings
+doks:
+    baseurl: /digitalcontent.github.io
+    color_theme: purple
+    header:
+        logo:
+            text: Agenda
+            image:
+        nav:
+            - item_name: Overview
+              item_url: 'Overview'
+            - item_name: User Interface
+              item_url: 'UI'
+            - item_name: API
+              item_url: 'API'
+    footer:
+        content:
+            logo:
+                text: Agenda
+                image:
+            copyright: Copyright &copy; 2022. - Agenda <br>All rights reserved.
+        social_list:
+            - network_name: facebook
+              profile_url: '#'
+            - network_name: twitter
+              profile_url: '#'
+            - network_name: instagram
+              profile_url: '#'
+            - network_name: youtube
+              profile_url: '#'
+    google_analytics:
+        tracking_code: # Add your Google Analytics tracking code to activate Google Analytics
+    comments:
+        disqus_forum_shortname: # Add your disqus forum shortname to activate comments
+
+# SASS settings
+sass:
+    sass_dir: ./doks-theme/_sass
+    style: :compressed
+
+# Jekyll settings
+layouts_dir: ./doks-theme/_layouts
+includes_dir: ./doks-theme/_includes
+exclude: [ 'README.md', 'CHANGELOG.md' ]
+permalink: /:title/
