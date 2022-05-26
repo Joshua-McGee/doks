@@ -22,7 +22,7 @@ doks:
             logo:
                 text: Agenda
                 image:
-            copyright: Copyright &copy; 2022. - Agenda <br>All rights reserved.
+            copyright: Copyright &copy; 2022. - Agenda <br>All rights reserved
         social_list:
             - network_name: facebook
               profile_url: '#'
