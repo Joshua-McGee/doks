@@ -22,10 +22,10 @@ micro_nav: true
 page_nav:
     prev:
         content: Previous page
-        url: '../API'
+        url: '/API'
     next:
         content: Next page
-        url: '../UI'
+        url: '/UI'
 ---
 
 ## Agenda Application Overview

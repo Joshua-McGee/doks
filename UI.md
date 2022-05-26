@@ -22,10 +22,10 @@ micro_nav: true
 page_nav:
     prev:
         content: Previous page
-        url: '../Overview'
+        url: '/Overview'
     next:
         content: Next page
-        url: '../API'
+        url: '/API'
 ---
 
 ## Write your markdown here ...
