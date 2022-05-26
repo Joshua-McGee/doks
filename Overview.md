@@ -10,10 +10,10 @@ description: The following guide explains x, y, z.
 
 # Author box
 author:
-    title: About Author
+    title: Overview documents
     title_url: '#'
     external_url: true
-    description: Author description
+    description: Learn about what goes into making a great overview document.
 
 # Micro navigation
 micro_nav: true
