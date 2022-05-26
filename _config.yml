@@ -12,11 +12,11 @@ doks:
             image:
         nav:
             - item_name: Overview
-              item_url: 'Overview'
+              item_url: '/Overview'
             - item_name: User Interface
-              item_url: 'UI'
+              item_url: '/UI'
             - item_name: API
-              item_url: 'API'
+              item_url: '/API'
     footer:
         content:
             logo:
