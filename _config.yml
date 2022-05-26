@@ -13,7 +13,7 @@ doks:
             image:
         nav:
             - item_name: Overview
-              item_url: 'Overview'
+              item_url: ({{ site.baseurl }}/Overview)
             - item_name: User Interface
               item_url: 'UI'
             - item_name: API
