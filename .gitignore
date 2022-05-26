@@ -8,6 +8,7 @@
 *.bak
 *.swp
 Thumbs.db
+*-cache
 
 # -----------------------
 # Local Development Tools
@@ -19,3 +20,4 @@ Thumbs.db
 # Compiled assets
 # ---------------
 .sass-cache
+_site

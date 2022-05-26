@@ -1,10 +1,10 @@
 #site metatdata do not change!
 repository: https://github.com/Joshua-McGee/doks
 url: https://joshua-mcgee.github.io/
-baseurl: /doks
 
 # Theme settings
 doks:
+    baseurl: /doks
     color_theme: purple
     header:
         logo:
