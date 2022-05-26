@@ -5,7 +5,7 @@ url: https://joshua-mcgee.github.io
 
 # Theme settings
 doks:
-    baseurl: /digitalcontent.github.io
+    baseurl: /doks
     color_theme: purple
     header:
         logo:
