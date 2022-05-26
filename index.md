@@ -27,13 +27,13 @@ grid_navigation:
     - title: Overview Documentation
       excerpt: Learn about how Agenda can help your company
       cta: Read more
-      url: 'Overview'
+      url: '/Overview'
     - title: UI Documenation
       excerpt: Learn how to use the Agenda UI to create teams, schedule meetings, and more.
       cta: Read more
-      url: 'UI'
+      url: '/UI'
     - title: API Documenation
       excerpt: Learn how to use the Agenda API to pull data, statistics, generate XML files, and more.
       cta: Read more
-      url: 'API'
+      url: '/API'
 ---
