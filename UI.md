@@ -10,10 +10,10 @@ description: Learn how to create teams, schedule meetings, and connect your sour
 
 # Author box
 author:
-    title: About Author
-    title_url: '#'
-    external_url: true
-    description: Author description
+    title: How we write
+    title_url: '/ensemble-UI'
+    external_url: false
+    description: Learn more about how we write UI documenation
 
 # Micro navigation
 micro_nav: true

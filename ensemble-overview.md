@@ -5,15 +5,15 @@ keywords:
 comments: false
 
 # Hero section
-title: Agenda Overview Documentation
-description: The following guide explains x, y, z.
+title: Ensemble Overview Documentation
+description: An overview document is often the first document a user sets their eyes on, lets talk about what makes a good overview.
 
 # Author box
 author:
-    title: How we write
-    title_url: '/ensemble-overview'
-    external_url: false
-    description: Learn about what goes into making a great overview document.
+    title: Agenda overview sample 
+    title_url: '/Overview'
+    external_url: False
+    description: Take a look at our sample overview for Agenda.
 
 # Micro navigation (the side navigation in the body)
 micro_nav: true
@@ -22,12 +22,12 @@ micro_nav: true
 page_nav:
     prev:
         content: Previous page
-        url: '/API'
+        url: '/ensemble-API'
     next:
         content: Next page
-        url: '/UI'
+        url: '/ensemble-UI'
 ---
-<!-- Write the documenation content here -->
+<!-- Write the documenation content here, do not change anyting above the "---" aside from descriptions -->
 
 ## Agenda Application Overview
 

@@ -5,15 +5,15 @@ keywords:
 comments: false
 
 # Hero section
-title: Agenda Overview Documentation
-description: The following guide explains x, y, z.
+title: Ensemble API Documentation
+description: API documenation needs both a writer and developer touch
 
 # Author box
 author:
-    title: How we write
-    title_url: '/ensemble-overview'
-    external_url: false
-    description: Learn about what goes into making a great overview document.
+    title: Agenda API sample
+    title_url: '/API'
+    external_url: False
+    description: Take a look at our sample API docs for Agenda.
 
 # Micro navigation (the side navigation in the body)
 micro_nav: true
@@ -22,12 +22,12 @@ micro_nav: true
 page_nav:
     prev:
         content: Previous page
-        url: '/API'
+        url: '/ensemble-UI'
     next:
         content: Next page
-        url: '/UI'
+        url: '/ensemble-overview'
 ---
-<!-- Write the documenation content here -->
+<!-- Write the documenation content here, do not change anyting above the "---" aside from descriptions -->
 
 ## Agenda Application Overview
 
@@ -49,3 +49,7 @@ Content should be in Markdown format and you shouldn't remove `.yml` comments on
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
+
+```html
+<br> should be used when possible.
+```

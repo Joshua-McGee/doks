@@ -10,10 +10,10 @@ description: Generate XML files, JSON payloads, and more.
 
 # Author box
 author:
-    title: About Author
-    title_url: '#'
-    external_url: true
-    description: Author description
+    title: How we write
+    title_url: '/ensemble-API'
+    external_url: false
+    description: Learn more about how we write API documenation
 
 # Micro navigation
 micro_nav: true

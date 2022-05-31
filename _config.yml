@@ -23,15 +23,15 @@ doks:
                 text: Agenda
                 image:
             copyright: Copyright &copy; 2022. - Agenda <br>All rights reserved
-        social_list:
+        social_list: # We should update this with the linkedIn logo
             - network_name: facebook
-              profile_url: '#'
+              profile_url: '#' # Add ensemble facebook URL
             - network_name: twitter
-              profile_url: '#'
+              profile_url: '#' # Add ensemble twitter URL
             - network_name: instagram
-              profile_url: '#'
+              profile_url: '#' # Add ensemble instagram URL
             - network_name: youtube
-              profile_url: '#'
+              profile_url: '#' # Add ensemble youtube URL
     google_analytics:
         tracking_code: # Add your Google Analytics tracking code to activate Google Analytics
     comments:
