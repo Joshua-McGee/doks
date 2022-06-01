@@ -6,7 +6,7 @@ comments: false
 
 # Hero section
 title: Ensemble Overview Documentation
-description: An overview document is often the first document a user sets their eyes on, lets talk about what makes a good overview.
+description: An overview document is often the first document a user sets their eyes on. Let's talk about what makes a good overview.
 
 # Author box
 author:
@@ -49,3 +49,9 @@ Content should be in Markdown format and you shouldn't remove `.yml` comments on
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
+
+```json
+{
+    "test": "content"
+}
+```
