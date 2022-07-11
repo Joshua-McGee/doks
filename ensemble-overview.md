@@ -34,7 +34,7 @@ page_nav:
 
 Content should be in Markdown format and you shouldn't remove `.yml` comments on top of the `.md` files, errors may occur if you remove them.
 
-<iframe width="650" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="650" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <div class="example">
     <p>insert HTML to render it within this example class</p>
