@@ -27,11 +27,14 @@ page_nav:
         content: Next page
         url: '/ensemble-UI'
 ---
-<!-- Write the documenation content here, do not change anyting above the "---" aside from descriptions -->
+
+<!-- Write the documentation content here, do not change anything above the "---" aside from descriptions -->
 
 ## Agenda Application Overview
 
 Content should be in Markdown format and you shouldn't remove `.yml` comments on top of the `.md` files, errors may occur if you remove them.
+
+<iframe width="600" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <div class="example">
     <p>insert HTML to render it within this example class</p>

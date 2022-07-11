@@ -8,8 +8,8 @@ doks:
     color_theme: purple
     header:
         logo:
-            text: Agenda
-            image:
+            text:
+            image: true
         nav:
             - item_name: Overview
               item_url: '/Overview'
