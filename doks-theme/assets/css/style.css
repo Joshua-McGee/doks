@@ -3084,7 +3084,8 @@ pre.highlight {
 }
 
 .site-header__logo img {
-    height: calc(5.625rem - 1px)
+    height: calc(5.625rem - 1px);
+    padding-top: 25px;
 }
 
 .site-header__nav {
