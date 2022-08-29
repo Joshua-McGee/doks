@@ -78,7 +78,7 @@ Agenda unifies this data to provide you, and your team members, with a clearer v
 
 ### System architecture
 
-**Insert Image: of system diagram**
+![](images/overview-system-architecture.png)
 
 Agenda connects to several external scheduling applications and meeting platforms via APIs to ingest user meeting data. External meeting data is streamed into Agenda for processing and is used to update the meeting data set for a given user profile. Meeting information for each user is stored and used to update availability when scheduling new meetings with teams. The availability of external meeting information from connected sources allows Agenda to suggest the most appropriate meeting times based on each team member's separate schedules.
 
@@ -92,7 +92,7 @@ b) Data collection and business logic layer: Where all of the disparate meeting 
 
 c) Database: Where user's updated profile and scheduling data is stored.
 
-d) APIs: Agenda is built API-first and can be connected to a wide variety of external scheduling and meeting applications, such as: Google Calendar, Outlook, Slack, Zoom, Teams, and so on. Meeting data is then streamed from the connected source into Agenda to be processed and used to update user availability. Agenda can also be configured to send updated meeting information to selected sources, depending on the availability of their API connectors.
+d) Agenda is built API-first and can be connected to a wide variety of external scheduling and meeting applications, such as: Google Calendar, Outlook, Slack, Zoom, Teams, and so on. Meeting data is then streamed from the connected source into Agenda to be processed and used to update user availability. Agenda can also be configured to send updated meeting information to selected sources, depending on the availability of their API connectors.
 
 ### Learn more
 
