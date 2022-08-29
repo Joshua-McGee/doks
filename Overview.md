@@ -56,17 +56,15 @@ Explore Agenda's [user interface](UI.md).
 
 Agenda's home view displays your upcoming meetings and provides quick access to the [scheduling tool](insert link to the Schedule a Meeting tutorial) in one simplified user interface. 
 
-**Insert Image: of home screen**
+![](images/overview-home-view.png)
 
 From here, you can select the plus icon to start scheduling a new meeting. Agenda's scheduling workflow walks you through all of the necessary steps to set up a meeting with your team members and suggests recommended times based on everyone's availability.
-
-**Insert Image: of Agenda suggested time feature**
 
 #### Organizing teams
 
 With the teams feature, you can [create teams](insert link to to Create/Join a Team Guide) and organize users based on project assignments, company team structure, or any other team assignment that reflects your organizational needs. Teams are searchable by various tag criteria to help you quickly locate and assign the right people you need on your team. 
 
-**Insert Image: Main Team view**
+![](images/overview-team-view.png)
 
 When scheduling team meetings you simply have to select the team and all team member availability is assessed to present you with the best meeting times that work for everyone.
 
@@ -74,7 +72,7 @@ When scheduling team meetings you simply have to select the team and all team me
 
 Agenda is an API-first application that enables simplified [connections to your external scheduling applications](insert link to Connect to a Source tutorial) using the sources feature. From sources you can choose from a number of scheduling applications to [merge your meeting information](insert link to Import a Meeting tutorial) into one space. 
 
-**Insert Image: of sources view**
+![](images/overview-sources-view.png)
 
 Agenda unifies this data to provide you, and your team members, with a clearer view of your availability. Meetings scheduled within Agenda can also be pushed to your external scheduling applications to ensure all of your calendars are up to date.
 
