@@ -48,9 +48,9 @@ Not sure where to begin? See the [getting started guide](insert link to Quick St
   
 ## How Agenda works
 
-Agenda connects to external calendars and meeting platforms to merge user meeting details into one application, providing a more complete view of team availability and creating a simplified scheduling workflow. With everyone's meeting details available within one space, you can quickly create teams and schedule meetings that work well for all.
+Agenda connects to external calendars and meeting platforms to merge user meeting details into one simplified view, providing a more comprehensive picture of team availability and simplifying the scheduling workflow. With everyone's meeting details available within one space, you can quickly create teams and schedule meetings that work well for all.
 
-Explore Agenda's [user interface](UI.md).
+You can manage Agenda's capabilities through the simplified [user interface](UI.md) or integrate Agenda with your external applications using the [RESTful APIs](API.md).
 
 ### Quick scheduling
 
