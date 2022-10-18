@@ -62,11 +62,11 @@ From here, you can select the plus icon to start scheduling a new meeting. Agend
 
 ### Organizing teams
 
-With the teams feature, you can [create teams](insert link to to Create/Join a Team Guide) and organize users based on project assignments, company team structure, or any other team assignment that reflects your organizational needs. Teams are searchable by various tag criteria to help you quickly locate and assign the right people you need on your team. 
+Agenda allows you to organize your people just as easily as your meeting schedules. You can [create and customize teams](insert link to Create a Team tutorial) to organize users based on project assignments, company team structure, or any other team assignment that reflects your organizational needs. Teams are searchable by various tag criteria to help you quickly locate and assign the right people you need in your meetings.
 
 ![](images/overview-team-view.png)
 
-When scheduling team meetings you simply have to select the team and all team member availability is assessed to present you with the best meeting times that work for everyone.
+When scheduling team meetings, simply select the team and the availability of all its members is factored in to suggest the ideal meeting times that work best for everyone.
 
 ### Merging external calendars
 
