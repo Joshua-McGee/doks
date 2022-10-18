@@ -31,14 +31,14 @@ page_nav:
 
 # Agenda Application Overview
 
-Agenda is a scheduling application that simplifies the meeting process for your teams by combining team member availability and meeting platforms from separate applications into one streamlined workspace. Review your upcoming meetings in one clean view and seamlessly schedule meetings with your teams through a simplified scheduling workflow.
+As remote collaboration becomes even more essential for businesses, the available platforms for scheduling meetings are increasing and gaining in complexity. Agenda streamlines how you manage meetings across platforms and teams by combining team member availability and meeting platforms from separate applications into one workspace. Review upcoming meetings in one clean view and seamlessly schedule meetings with your various teams through a simplified scheduling workflow.
 
-Agenda connects to external scheduling applications and merges their independent meeting data into one place. Having team availability organized in one simplified workspace allows for quick scheduling that works for everyone. Agenda eliminates the cumbersome process of comparing multiple calendars for various team members across numerous applications.
+Agenda connects to external scheduling applications like Microsoft Outlook Calendar, Google Calendar, or Zoom and merges their independent meeting data into one place. By consolidating team member availability into one simplified workspace, you can quickly schedule meetings that work well for everyone. Agenda eliminates the cumbersome process of comparing multiple calendars for team members across various applications.
 
 With Agenda, you can:
 
 - Quickly view and schedule meetings.
-- View and create appropriate teams.
+- Create and manage teams that suit your organizational needs.
 - Import calendars and meeting rooms from external applications.
 - Connect to your Employee Management System for quick [team onboarding](insert link to Import a Team Tutorial).
 
