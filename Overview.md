@@ -37,14 +37,14 @@ Agenda connects to external scheduling applications like Microsoft Outlook Calen
 
 With Agenda, you can:
 
-- Quickly view and schedule meetings.
-- Create and manage teams that suit your organizational needs.
-- Import calendars and meeting rooms from external applications.
-- Connect to your Employee Management System for quick [team onboarding](insert link to Import a Team Tutorial).
+- Quickly [view and schedule meetings](insert link to Schedule a Meeting tutorial).
+- [Create and manage teams](insert link to Create a Team tutorial) that suit your organizational needs.
+- [Import calendars and meeting rooms](insert link to Import a Meeting tutorial) from external applications.
+- Connect to your Employee Management System for quick [team onboarding](insert link to Import a Team tutorial).
 
 **add appropriate links to the above list items for quick access to their associated docs or headings in this doc**
 
-[Get started](insert link to Quick Start Guide) with Agenda and import your first calendar.
+Not sure where to begin? See the [getting started guide](insert link to Quick Start Guide) to learn how to import your first calendar.
   
 ## How Agenda works
 
