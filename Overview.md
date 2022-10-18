@@ -29,7 +29,7 @@ page_nav:
 ---
 <!-- Write the documenation content here -->
 
-## Agenda Application Overview
+# Agenda Application Overview
 
 Agenda is a scheduling application that simplifies the meeting process for your teams by combining team member availability and meeting platforms from separate applications into one streamlined workspace. Review your upcoming meetings in one clean view and seamlessly schedule meetings with your teams through a simplified scheduling workflow.
 
@@ -46,13 +46,13 @@ With Agenda, you can:
 
 [Get started](insert link to Quick Start Guide) with Agenda and import your first calendar.
   
-### How Agenda works
+## How Agenda works
 
 Agenda connects to external calendars and meeting platforms to merge user meeting details into one application, providing a more complete view of team availability and creating a simplified scheduling workflow. With everyone's meeting details available within one space, you can quickly create teams and schedule meetings that work well for all.
 
 Explore Agenda's [user interface](UI.md).
 
-#### Quick scheduling
+### Quick scheduling
 
 Agenda's home view displays your upcoming meetings and provides quick access to the [scheduling tool](insert link to the Schedule a Meeting tutorial) in one simplified user interface. 
 
@@ -60,7 +60,7 @@ Agenda's home view displays your upcoming meetings and provides quick access to 
 
 From here, you can select the plus icon to start scheduling a new meeting. Agenda's scheduling workflow walks you through all of the necessary steps to set up a meeting with your team members and suggests recommended times based on everyone's availability.
 
-#### Organizing teams
+### Organizing teams
 
 With the teams feature, you can [create teams](insert link to to Create/Join a Team Guide) and organize users based on project assignments, company team structure, or any other team assignment that reflects your organizational needs. Teams are searchable by various tag criteria to help you quickly locate and assign the right people you need on your team. 
 
@@ -68,7 +68,7 @@ With the teams feature, you can [create teams](insert link to to Create/Join a T
 
 When scheduling team meetings you simply have to select the team and all team member availability is assessed to present you with the best meeting times that work for everyone.
 
-#### Merging external calendars
+### Merging external calendars
 
 Agenda is an API-first application that enables simplified [connections to your external scheduling applications](insert link to Connect to a Source tutorial) using the sources feature. From sources you can choose from a number of scheduling applications to [merge your meeting information](insert link to Import a Meeting tutorial) into one space. 
 
@@ -76,7 +76,7 @@ Agenda is an API-first application that enables simplified [connections to your 
 
 Agenda unifies this data to provide you, and your team members, with a clearer view of your availability. Meetings scheduled within Agenda can also be pushed to your external scheduling applications to ensure all of your calendars are up to date.
 
-### System architecture
+## System architecture
 
 ![](images/overview-system-architecture.png)
 
@@ -94,7 +94,7 @@ c) Database: Where user's updated profile and scheduling data is stored.
 
 d) Agenda is built API-first and can be connected to a wide variety of external scheduling and meeting applications, such as: Google Calendar, Outlook, Slack, Zoom, Teams, and so on. Meeting data is then streamed from the connected source into Agenda to be processed and used to update user availability. Agenda can also be configured to send updated meeting information to selected sources, depending on the availability of their API connectors.
 
-### Learn more
+## Learn more
 
 [Quick start guide](insert link)
 
