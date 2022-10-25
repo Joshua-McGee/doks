@@ -50,7 +50,7 @@ Not sure where to begin? See the [getting started guide](insert link to Quick St
 
 Agenda connects to external calendars and meeting platforms to merge user meeting details into one simplified view, providing a more comprehensive picture of team availability and simplifying the scheduling workflow. With everyone's meeting details available within one space, you can quickly create teams and schedule meetings that work well for all.
 
-You can manage Agenda's capabilities through the simplified [user interface](UI.md) or integrate Agenda with your external applications using the [RESTful APIs](API.md).
+You can manage Agenda's capabilities through the simplified [user interface](UI.md) or integrate Agenda with your external applications using the [RESTful API](API.md).
 
 ### Quick scheduling
 
@@ -70,11 +70,13 @@ When scheduling team meetings, simply select the team and the availability of al
 
 ### Merging external calendars
 
-Agenda is an API-first application that enables simplified [connections to your external scheduling applications](insert link to Connect to a Source tutorial) using the sources feature. From sources you can choose from a number of scheduling applications to [merge your meeting information](insert link to Import a Meeting tutorial) into one space. 
+Agenda enables simplified [connections to your external scheduling applications](insert link to Connect to a Source tutorial) from the Sources tab in the UI. You can choose from several scheduling applications to [merge your meeting information](insert link to Import a Meeting tutorial) into one space. 
 
 ![](images/overview-sources-view.png)
 
-Agenda unifies this data to provide you, and your team members, with a clearer view of your availability. Meetings scheduled within Agenda can also be pushed to your external scheduling applications to ensure all of your calendars are up to date.
+Agenda unifies this data to provide you, and your team members, with a clearer view of your availability. 
+
+While Agenda provides an overview of your upcoming schedule from the home screen, meetings scheduled in Agenda can also be pushed to your external scheduling applications to ensure all of your calendars are up to date. This is helpful if you work with external partners or clients who are not set up with Agenda and require access to your availability in a different platform.
 
 ## System architecture
 
@@ -82,9 +84,7 @@ Agenda creates a two-way data pipeline that streams real-time data between exter
 
 ![](images/overview-system-architecture.png)
 
-Agenda connects to several external scheduling applications and meeting platforms via APIs to ingest user meeting data. External meeting data is streamed into Agenda for processing and is used to update the meeting data set for a given user profile. Meeting information for each user is stored and used to update availability when scheduling new meetings with teams. The availability of external meeting information from connected sources allows Agenda to suggest the most appropriate meeting times based on each team member's separate schedules.
-
-For detailed information on Agenda's APIs see the [API endpoint reference guides](API.md).
+Agenda connects to several external scheduling applications and meeting platforms to ingest user meeting data. External meeting data is streamed into Agenda for processing and is used to update the meeting data set for a given user profile. Meeting information for each user is stored and used to update availability when scheduling new meetings with teams. The availability of external meeting information from connected sources allows Agenda to suggest the most appropriate meeting times based on each team member's separate schedules.
 
 At a high-level, Agenda is comprised of the following major components:
 
