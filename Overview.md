@@ -94,7 +94,7 @@ At a high-level, Agenda is comprised of the following major components:
 
 - **Database:** User profiles and scheduling data are stored in a secure database partition unique to your organization.
 
-- **Source connectors:** Agenda and can be connected to a wide variety of external scheduling and meeting applications, such as Google Calendar, Outlook, Slack, or Zoom for example. Meeting data is then streamed from the connected source into Agenda to be processed and used to update user availability. Agenda can also be configured to send updated meeting information back to selected sources.
+- **Source connectors:** Agenda and can be connected to a wide variety of external scheduling and meeting applications, such as Google Calendar, Outlook, Slack, or Zoom. Meeting data is then streamed from the connected source into Agenda to be processed and used to update user availability. Agenda can also be configured to send updated meeting information back to selected sources.
 
 ## Learn more
 
