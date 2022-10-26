@@ -31,9 +31,9 @@ page_nav:
 
 # Agenda Application Overview
 
-As remote collaboration becomes even more essential for businesses, the available platforms for scheduling meetings are increasing and gaining in complexity. Agenda streamlines how you manage meetings across platforms and teams by combining team member availability and meeting platforms from separate applications into one workspace. Review upcoming meetings in one clean view and seamlessly schedule meetings with your various teams through a simplified scheduling workflow.
+As remote collaboration becomes more essential for businesses, the available platforms for scheduling meetings are increasing and gaining in complexity. Agenda streamlines how you manage meetings across platforms and teams by combining team member availability and meeting platforms from separate applications into one workspace. Review upcoming meetings in one clean view and seamlessly schedule meetings with your various teams through a simplified scheduling workflow.
 
-Agenda connects to external scheduling applications like Microsoft Outlook Calendar, Google Calendar, or Zoom and merges their independent meeting data into one place. By consolidating team member availability into one simplified workspace, you can quickly schedule meetings that work well for everyone. Agenda eliminates the cumbersome process of comparing multiple calendars for team members across various applications.
+Agenda connects to external scheduling applications like Microsoft Outlook Calendar, Google Calendar, or Zoom, and merges their independent meeting data into one place. By consolidating team member availability into one simplified workspace, you can quickly schedule meetings that work well for everyone. Agenda eliminates the cumbersome process of comparing multiple calendars for team members across various applications.
 
 With Agenda, you can:
 
@@ -74,7 +74,7 @@ Agenda enables simplified [connections to your external scheduling applications]
 
 ![](images/overview-sources-view.png)
 
-Agenda unifies this data to provide you, and your team members, with a clearer view of your availability. 
+Agenda unifies this data to provide you and your team members with a clearer view of each other's availability. 
 
 While Agenda provides an overview of your upcoming schedule from the home screen, meetings scheduled in Agenda can also be pushed to your external scheduling applications to ensure all of your calendars are up to date. This is helpful if you work with external partners or clients who are not set up with Agenda and require access to your availability in a different platform.
 
@@ -90,7 +90,7 @@ At a high-level, Agenda is comprised of the following major components:
 
 - **Three main views:** Allows you to view and schedule meetings, connect to sources, and manage your teams.
 
-- **Data collection and business logic layer:** Where all of the disparate meeting data for users is combined from external sources to provide a singular view of each users availability. This is where meeting requests are processed, updated, and made available for export back to your connected sources.
+- **Data collection and business logic layer:** Where all of the disparate meeting data for users is combined from external sources to provide a singular view of each user's availability. This is where meeting requests are processed, updated, and made available for export back to your connected sources.
 
 - **Database:** User profiles and scheduling data are stored in a secure database partition unique to your organization.
 
