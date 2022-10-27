@@ -58,7 +58,7 @@ Agenda's home view displays your upcoming meetings and provides quick access to 
 
 ![Agenda's home view with a user's scheduled meetings in a chronological list](images/overview-home-view.png)
 
-From here, you can select the plus icon to start scheduling a new meeting. Agenda's scheduling workflow walks you through all of the necessary steps to set up a meeting with your team members and suggests recommended times based on everyone's availability.
+From here, you can select the add icon (![](images/add-icon.png)) to start scheduling a new meeting. Agenda's scheduling workflow walks you through all of the necessary steps to set up a meeting with your team members and suggests recommended times based on everyone's availability.
 
 ### Organizing teams
 
