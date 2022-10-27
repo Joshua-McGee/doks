@@ -56,7 +56,7 @@ You can manage Agenda's capabilities through the simplified [user interface](UI.
 
 Agenda's home view displays your upcoming meetings and provides quick access to the [scheduling tool](insert link to the Schedule a Meeting tutorial) in one simplified user interface. 
 
-![](images/overview-home-view.png)
+![Agenda's home view with a user's scheduled meetings in a chronological list](images/overview-home-view.png)
 
 From here, you can select the plus icon to start scheduling a new meeting. Agenda's scheduling workflow walks you through all of the necessary steps to set up a meeting with your team members and suggests recommended times based on everyone's availability.
 
@@ -64,7 +64,7 @@ From here, you can select the plus icon to start scheduling a new meeting. Agend
 
 Agenda allows you to organize your people just as easily as your meeting schedules. You can [create and customize teams](insert link to Create a Team tutorial) to organize users based on project assignments, company team structure, or any other team assignment that reflects your organizational needs. Teams are searchable by various tag criteria to help you quickly locate and assign the right people you need in your meetings.
 
-![](images/overview-team-view.png)
+![The Teams user interface with a list of a user's teams, including team name and size](images/overview-team-view.png)
 
 When scheduling team meetings, simply select the team and the availability of all its members is factored in to suggest the ideal meeting times that work best for everyone.
 
@@ -72,7 +72,7 @@ When scheduling team meetings, simply select the team and the availability of al
 
 Agenda enables simplified [connections to your external scheduling applications](insert link to Connect to a Source tutorial) from the Sources tab in the UI. You can choose from several scheduling applications to [merge your meeting information](insert link to Import a Meeting tutorial) into one space. 
 
-![](images/overview-sources-view.png)
+![The Sources user interface with a list of all available source connections to external applications](images/overview-sources-view.png)
 
 Agenda unifies this data to provide you and your team members with a clearer view of each other's availability. 
 
@@ -82,7 +82,7 @@ While Agenda provides an overview of your upcoming schedule from the home screen
 
 Agenda creates a two-way data pipeline that streams real-time data between external calendar applications to ensure that your team's schedules are always aligned.
 
-![](images/overview-system-architecture.png)
+![System architecture diagram outlining Agenda's connections and core components. The client connects to the business logic layer, which handles connections with external sources and Agenda's data warehouse](images/overview-system-architecture.png)
 
 Agenda connects to several external scheduling applications and meeting platforms to ingest user meeting data. External meeting data is streamed into Agenda for processing and is used to update the meeting data set for a given user profile. Meeting information for each user is stored and used to update availability when scheduling new meetings with teams. The availability of external meeting information from connected sources allows Agenda to suggest the most appropriate meeting times based on each team member's separate schedules.
 
