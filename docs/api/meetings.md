@@ -600,4 +600,4 @@ A successful response returns HTTP status 204 (No Content) and a blank body.
 
 ## Next steps
 
-After reading this guide, you have a better understanding of how to list, create, update, and delete your meetings. For more information on other available endpoints, please read the [API overview guide](./overview.md). To learn how to 
+After reading this guide, you have a better understanding of how to list, create, update, and delete your meetings. For more information on other available endpoints, please read the [API overview guide](./overview.md). To learn how to manage meetings within the UI, please read the [meetings UI guide](#).
