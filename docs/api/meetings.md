@@ -1,6 +1,6 @@
 # Meetings endpoint
 
-Insert blurb describing what meetings are.
+The Agenda application lets you manage your meetings - both external and internal - with ease. You can use the `/meetings` endpoint to retrieve a list of meetings, create a new meeting, retrieve details of a specific meeting, update a specific meeting, or delete a specific meeting.  
 
 ## Getting started
 
