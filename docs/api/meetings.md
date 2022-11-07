@@ -1,6 +1,6 @@
 # Meetings endpoint
 
-The Agenda application lets you manage your meetings - both external and internal - with ease. You can use the `/meetings` endpoint to retrieve a list of meetings, create a new meeting, retrieve details of a specific meeting, update a specific meeting, or delete a specific meeting.  
+The Agenda application lets you manage your meetings - both external and internal - with ease. You can use the `/meetings` endpoint to retrieve a list of meetings, create a new meeting, update the invitation status for a meeting, retrieve details of a specific meeting, update a specific meeting, or delete a specific meeting.  
 
 ## Getting started
 
@@ -19,6 +19,7 @@ GET /meetings
 GET /meetings?source-id={SOURCE_ID}
 GET /meetings?source-name={SOURCE_NAME}
 GET /meetings?source-category={SOURCE_CATEGORY}
+GET /meetings?source-type={SOURCE_TYPE}
 GET /meetings?team-id={TEAM_ID}
 GET /meetings?team-name={TEAM_NAME}
 GET /meetings?limit={LIMIT}
@@ -30,6 +31,7 @@ GET /meetings?page={PAGE}
 | `{SOURCE_ID}` | The ID of the source that you want to filter by. |
 | `{SOURCE_NAME}` | The name of the source that you want to filter by. |
 | `{SOURCE_CATEGORY}` | The category of source you want to filter by. This value can either be `virtual` or `in-person`. |
+| `{SOURCE_TYPE}` | The type of source you want to filter for. This value is **only** used by `virtual` sources. Possible values include `zoom`, `slack`, `teams`, and `skype`. |
 | `{TEAM_ID}` | The ID of the team that you want to filter for. |
 | `{TEAM_NAME}` | The name of the team that you want to filter for. | 
 | `{LIMIT}` | Specifies the number of meetings returned. | 
@@ -47,7 +49,7 @@ curl -X GET https://api.ensemble.com/agenda/meetings?limit=2&team-id=7 \
 
 ### Response
 
-A successful response returns HTTP status 200 with a list of meetings, based on the query parameter(s) provided in the request path.
+A successful response returns HTTP status 200 with a list of meetings based on the query parameters provided in the request path.
 
 ```json
 {
@@ -199,9 +201,9 @@ A successful response returns HTTP status 200 with a list of meetings, based on 
 | `id` | The ID of the meeting. |
 | `source` | An object that contains details about the meeting's location. |
 | `source.name` | The name of the source. |
-| `source.category` | The category of the source. This value can either be `virtual` for online meetings or `in-person` for in-person meetings. |
-| `source.type` | The type of the source. Possible values include `zoom`, `teams`, `slack`, and `skype`. This value is **only** returned for meetings in the `virtual` category. 
-| `source.url` | The URL for the source. This value is **only** returned for meetings in the `virtual` category.
+| `source.category` | The category of the source. This value can either be `virtual` for online sources or `in-person` for in-person sources (such as meeting rooms). |
+| `source.type` | The type of the source. Possible values include `zoom`, `teams`, `slack`, and `skype`. This value is **only** returned for sources in the `virtual` category. 
+| `source.url` | The URL for the source. This value is **only** returned for sources in the `virtual` category.
 | `source.id` | The ID of the source. |
 | `invitees` | An array of people invited to the meeting. |
 | `invitees.name` | The name of the person invited. |
@@ -349,6 +351,37 @@ A successful response returns HTTP status 201 with details about your newly crea
 | `source` | The information about the source. This field is automatically expanded upon, based on the ID provided. |
 | `createdBy` | The ID of the user who created the meeting. This field is automatically generated, based on the user who sent the audience creation request. |
 | `series` | A boolean value that shows if the meeting is part of a series. If not provided within the request body, it will automatically be set as `false`. |
+
+## Update meeting invitation status
+
+You can update your invitation status for a specific meeting by making a PUT request to the `/meetings` endpoint and providing the ID of the meeting that you are responding to in the request path.
+
+### API format
+
+```http
+GET /meetings/{MEETING_ID}/status
+```
+
+| Parameter | Description |
+| --------- | ----------- |
+| `{MEETING_ID}` | The `id` of the meeting you want to update the invitation status of.
+
+### Request
+
+```shell
+curl -X PUT https://api.ensemble.com/agenda/meetings/387/status
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer {ACCESS_TOKEN}' \
+-H 'Client-ID: {API_KEY}' \
+-d '{
+    "status": "accepted",
+    "email": "chrish@dahliacorp.com"
+}'
+```
+
+### Response
+
+A successful response returns HTTP status 204 (No Content) and a blank body.
 
 ## Retrieve a specific meeting
 
