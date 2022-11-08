@@ -4,7 +4,7 @@ The Agenda application lets you manage your meetings - both external and interna
 
 ## Getting started
 
-The endpoints used in this guide are part of the Ensemble Agenda APIs. Before continuing, please review the [getting started guide](./getting-started.md) for important information that you need to know in order to successfully make calls to the API, including required headers and how to read example APIs.
+The endpoints used in this guide are part of the agenda Agenda APIs. Before continuing, please review the [getting started guide](./getting-started.md) for important information that you need to know in order to successfully make calls to the API, including required headers and how to read example APIs.
 
 ## List meetings
 
@@ -42,7 +42,7 @@ GET /meetings?page={PAGE}
 The following request will retrieve the last two meetings for the Agenda Documentation team.
 
 ```shell
-curl -X GET https://api.ensemble.com/agenda/meetings?limit=2&team-id=7 \
+curl -X GET https://api.agenda.com/meetings?limit=2&team-id=7 \
 -H 'Authorization: Bearer {ACCESS_TOKEN}' \
 -H 'Client-ID: {API_KEY}'
 ```
@@ -64,7 +64,7 @@ A successful response returns HTTP status 200 with a list of meetings based on t
             "invitees": [
                 {
                     "name": "Stephen Chan",
-                    "email": "stephenc@ensemble.com",
+                    "email": "stephenc@agenda.com",
                     "external": false,
                     "status": "accepted",
                     "team": 7,
@@ -72,7 +72,7 @@ A successful response returns HTTP status 200 with a list of meetings based on t
                 },
                 {
                     "name": "Pierre Noble",
-                    "email": "pierren@ensemble.com",
+                    "email": "pierren@agenda.com",
                     "external": false,
                     "status": "accepted",
                     "team": 7,
@@ -80,7 +80,7 @@ A successful response returns HTTP status 200 with a list of meetings based on t
                 },
                 {
                     "name":"Kyouko Sakura",
-                    "email": "kyoukos@ensemble.com",
+                    "email": "kyoukos@agenda.com",
                     "external": false,
                     "status": "accepted",
                     "team": 7,
@@ -88,7 +88,7 @@ A successful response returns HTTP status 200 with a list of meetings based on t
                 },               
                 {
                     "name":"Dmitry Podkolzin",
-                    "email": "dmitryp@ensemble.com",
+                    "email": "dmitryp@agenda.com",
                     "external": false,
                     "status": "accepted",
                     "team": 7,
@@ -96,7 +96,7 @@ A successful response returns HTTP status 200 with a list of meetings based on t
                 },
                 {
                     "name":"Jessica Smith",
-                    "email": "jessicas@ensemble.com",
+                    "email": "jessicas@agenda.com",
                     "external": false,
                     "status": "accepted",
                     "team": 7,
@@ -125,7 +125,7 @@ A successful response returns HTTP status 200 with a list of meetings based on t
             [
                 {
                     "name": "Stephen Chan",
-                    "email": "stephenc@ensemble.com",
+                    "email": "stephenc@agenda.com",
                     "external": false,
                     "status": "accepted",
                     "team": 7,
@@ -133,7 +133,7 @@ A successful response returns HTTP status 200 with a list of meetings based on t
                 },
                 {
                     "name": "Pierre Noble",
-                    "email": "pierren@ensemble.com",
+                    "email": "pierren@agenda.com",
                     "external": false,
                     "status": "accepted",
                     "team": 7,
@@ -141,7 +141,7 @@ A successful response returns HTTP status 200 with a list of meetings based on t
                 },
                 {
                     "name":"Kyouko Sakura",
-                    "email": "kyoukos@ensemble.com",
+                    "email": "kyoukos@agenda.com",
                     "external": false,
                     "status": "accepted",
                     "team": 7,
@@ -149,7 +149,7 @@ A successful response returns HTTP status 200 with a list of meetings based on t
                 },               
                 {
                     "name":"Dmitry Podkolzin",
-                    "email": "dmitryp@ensemble.com",
+                    "email": "dmitryp@agenda.com",
                     "external": false,
                     "status": "accepted",
                     "team": 7,
@@ -157,7 +157,7 @@ A successful response returns HTTP status 200 with a list of meetings based on t
                 },
                 {
                     "name":"Jessica Smith",
-                    "email": "jessicas@ensemble.com",
+                    "email": "jessicas@agenda.com",
                     "external": false,
                     "status": "accepted",
                     "team": 7,
@@ -177,7 +177,7 @@ A successful response returns HTTP status 200 with a list of meetings based on t
                 },
                 {
                     "name": "Conrad Lee",
-                    "email": "conradl@ensemble.com",
+                    "email": "conradl@agenda.com",
                     "external": false,
                     "status": "declined",
                     "id": 95
@@ -234,14 +234,14 @@ POST /meetings
 ### Request
 
 ```shell
-curl -X POST https://api.ensemble.com/agenda/meetings \
+curl -X POST https://api.agenda.com/meetings \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer {ACCESS_TOKEN}' \
 -H 'Client-ID: {API_KEY}' \
 -d '{
     "source": 9,
     "invitees": [
-        "conradl@ensemble.com", "chrish@dahliacorp.com", "adab@dahliacorp.com"
+        "conradl@agenda.com", "chrish@dahliacorp.com", "adab@dahliacorp.com"
     ]
     "team": 7,
     "name": "Documentation enhancements",
@@ -277,7 +277,7 @@ A successful response returns HTTP status 201 with details about your newly crea
     [
         {
             "name": "Stephen Chan",
-            "email": "stephenc@ensemble.com",
+            "email": "stephenc@agenda.com",
             "external": false,
             "status": "pending",
             "team": 7,
@@ -285,7 +285,7 @@ A successful response returns HTTP status 201 with details about your newly crea
         },
         {
             "name": "Pierre Noble",
-            "email": "pierren@ensemble.com",
+            "email": "pierren@agenda.com",
             "external": false,
             "status": "pending",
             "team": 7,
@@ -293,7 +293,7 @@ A successful response returns HTTP status 201 with details about your newly crea
         },
         {
             "name":"Kyouko Sakura",
-            "email": "kyoukos@ensemble.com",
+            "email": "kyoukos@agenda.com",
             "external": false,
             "status": "pending",
             "team": 7,
@@ -301,7 +301,7 @@ A successful response returns HTTP status 201 with details about your newly crea
         },               
         {
             "name":"Dmitry Podkolzin",
-            "email": "dmitryp@ensemble.com",
+            "email": "dmitryp@agenda.com",
             "external": false,
             "status": "pending",
             "team": 7,
@@ -309,7 +309,7 @@ A successful response returns HTTP status 201 with details about your newly crea
         },
         {
             "name":"Jessica Smith",
-            "email": "jessicas@ensemble.com",
+            "email": "jessicas@agenda.com",
             "external": false,
             "status": "pending",
             "team": 7,
@@ -329,7 +329,7 @@ A successful response returns HTTP status 201 with details about your newly crea
         },
         {
             "name": "Conrad Lee",
-            "email": "conradl@ensemble.com",
+            "email": "conradl@agenda.com",
             "external": false,
             "status": "pending",
             "id": 95
@@ -369,7 +369,7 @@ GET /meetings/{MEETING_ID}/status
 ### Request
 
 ```shell
-curl -X PUT https://api.ensemble.com/agenda/meetings/387/status
+curl -X PUT https://api.agenda.com/meetings/387/status
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer {ACCESS_TOKEN}' \
 -H 'Client-ID: {API_KEY}' \
@@ -400,7 +400,7 @@ GET /meetings/{MEETING_ID}
 ### Request
 
 ```shell
-curl -X GET https://api.ensemble.com/agenda/meetings/387 \
+curl -X GET https://api.agenda.com/meetings/387 \
 -H 'Authorization: Bearer {ACCESS_TOKEN}' \
 -H 'Client-ID: {API_KEY}'
 ```
@@ -423,7 +423,7 @@ A successful response returns HTTP status 200 with information about the request
     [
         {
             "name": "Stephen Chan",
-            "email": "stephenc@ensemble.com",
+            "email": "stephenc@agenda.com",
             "external": false,
             "status": "pending",
             "team": 7,
@@ -431,7 +431,7 @@ A successful response returns HTTP status 200 with information about the request
         },
         {
             "name": "Pierre Noble",
-            "email": "pierren@ensemble.com",
+            "email": "pierren@agenda.com",
             "external": false,
             "status": "pending",
             "team": 7,
@@ -439,7 +439,7 @@ A successful response returns HTTP status 200 with information about the request
         },
         {
             "name":"Kyouko Sakura",
-            "email": "kyoukos@ensemble.com",
+            "email": "kyoukos@agenda.com",
             "external": false,
             "status": "pending",
             "team": 7,
@@ -447,7 +447,7 @@ A successful response returns HTTP status 200 with information about the request
         },               
         {
             "name":"Dmitry Podkolzin",
-            "email": "dmitryp@ensemble.com",
+            "email": "dmitryp@agenda.com",
             "external": false,
             "status": "pending",
             "team": 7,
@@ -455,7 +455,7 @@ A successful response returns HTTP status 200 with information about the request
         },
         {
             "name":"Jessica Smith",
-            "email": "jessicas@ensemble.com",
+            "email": "jessicas@agenda.com",
             "external": false,
             "status": "pending",
             "team": 7,
@@ -475,7 +475,7 @@ A successful response returns HTTP status 200 with information about the request
         },
         {
             "name": "Conrad Lee",
-            "email": "conradl@ensemble.com",
+            "email": "conradl@agenda.com",
             "external": false,
             "status": "pending",
             "id": 95
@@ -510,7 +510,7 @@ PATCH /meetings/{MEETING_ID}
 The following request updates the meeting time from November 10th, 11:00AM to November 10th, 11:30AM.
 
 ```shell
-curl -X PATCH https://api.ensemble.com/agenda/meetings/387 \
+curl -X PATCH https://api.agenda.com/meetings/387 \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer {ACCESS_TOKEN}' \
 -H 'Client-ID: {API_KEY}' \
@@ -537,7 +537,7 @@ A successful response returns HTTP status 200 with details about your newly upda
     [
         {
             "name": "Stephen Chan",
-            "email": "stephenc@ensemble.com",
+            "email": "stephenc@agenda.com",
             "external": false,
             "status": "pending",
             "team": 7,
@@ -545,7 +545,7 @@ A successful response returns HTTP status 200 with details about your newly upda
         },
         {
             "name": "Pierre Noble",
-            "email": "pierren@ensemble.com",
+            "email": "pierren@agenda.com",
             "external": false,
             "status": "pending",
             "team": 7,
@@ -553,7 +553,7 @@ A successful response returns HTTP status 200 with details about your newly upda
         },
         {
             "name":"Kyouko Sakura",
-            "email": "kyoukos@ensemble.com",
+            "email": "kyoukos@agenda.com",
             "external": false,
             "status": "pending",
             "team": 7,
@@ -561,7 +561,7 @@ A successful response returns HTTP status 200 with details about your newly upda
         },               
         {
             "name":"Dmitry Podkolzin",
-            "email": "dmitryp@ensemble.com",
+            "email": "dmitryp@agenda.com",
             "external": false,
             "status": "pending",
             "team": 7,
@@ -569,7 +569,7 @@ A successful response returns HTTP status 200 with details about your newly upda
         },
         {
             "name":"Jessica Smith",
-            "email": "jessicas@ensemble.com",
+            "email": "jessicas@agenda.com",
             "external": false,
             "status": "pending",
             "team": 7,
@@ -589,7 +589,7 @@ A successful response returns HTTP status 200 with details about your newly upda
         },
         {
             "name": "Conrad Lee",
-            "email": "conradl@ensemble.com",
+            "email": "conradl@agenda.com",
             "external": false,
             "status": "pending",
             "id": 95
@@ -622,7 +622,7 @@ DELETE /meetings/{MEETING_ID}
 ### Request
 
 ```shell
-curl -X DELETE https://api.ensemble.com/agenda/meetings/387 \
+curl -X DELETE https://api.agenda.com/meetings/387 \
 -H 'Authorization: Bearer {ACCESS_TOKEN}' \
 -H 'Client-ID: {API_KEY}'
 ```

@@ -6,7 +6,7 @@ The APIs for the Agenda application all share the same set of authentication hea
 
 ## Authentication and headers
 
-In order to authenticate and make calls with the Agenda APIs, you will need to complete the authentication tutorial. Once you have completed the tutorial, you will be able to use the following headers:
+In order to authenticate and make calls with the Agenda APIs, you will need to complete the [authentication tutorial](./authentication.md). Once you have completed the tutorial, you will be able to use the following headers:
 
 - `Authorization: Bearer {ACCESS_TOKEN}`
 - `Client-ID: {API_KEY}`

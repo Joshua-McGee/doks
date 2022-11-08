@@ -4,7 +4,7 @@ Insert blurb describing what sources are.
 
 ## Getting started
 
-The endpoints used in this guide are part of the Ensemble Agenda APIs. Before continuing, please review the [getting started guide](./getting-started.md) for important information that you need to know in order to successfully make calls to the API, including required headers and how to read example APIs.
+The endpoints used in this guide are part of the agenda Agenda APIs. Before continuing, please review the [getting started guide](./getting-started.md) for important information that you need to know in order to successfully make calls to the API, including required headers and how to read example APIs.
 
 ## List sources
 
@@ -35,7 +35,7 @@ is **only** used by `virtual` sources. Possible values include `zoom`, `slack`, 
 The following request will retrieve the last two created sources for the company.
 
 ```shell
-curl -X GET https://api.ensemble.com/sources?limit=2 \
+curl -X GET https://api.agenda.com/sources?limit=2 \
 -H 'Authorization: Bearer {ACCESS_TOKEN}' \
 -H 'Client-ID: {API_KEY}'
 ```
@@ -94,7 +94,7 @@ POST /sources
 The following request will create a new in-person source for the company.
 
 ```shell
-curl -X POST https://api.ensemble.com/agenda/sources \
+curl -X POST https://api.agenda.com/sources \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer {ACCESS_TOKEN}' \
 -H 'Client-ID: {API_KEY}' \
@@ -107,7 +107,7 @@ curl -X POST https://api.ensemble.com/agenda/sources \
 The following request will create a new virtual source for the company.
 
 ```shell
-curl -X POST https://api.ensemble.com/agenda/sources \
+curl -X POST https://api.agenda.com/sources \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer {ACCESS_TOKEN}' \
 -H 'Client-ID: {API_KEY}' \
