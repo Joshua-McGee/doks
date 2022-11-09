@@ -1,9 +1,8 @@
-# Authenticating and using the Agenda APIs
+# Authenticating and access the Agenda API
 
-This document provides a step-by-step guide on authenticating with the Agenda application so you can use the Agenda APIs. By following this guide, you will have generated the following credentials for your user account:
+This document provides a step-by-step guide on authenticating with the Agenda application so you can use the Agenda API. By following this guide, you will have generated the following credential for your user account:
 
 - `{ACCESS_TOKEN}`
-- `{API_KEY}`
 
 ## Prerequisites
 
@@ -25,11 +24,11 @@ https://api.agenda.com/oauth/v2/authorize?client_id={CLIENT_ID}
 | -------- | ----------- |
 | `{CLIENT_ID}` | The client ID value from your application's dashboard. |
 
-The Agenda UI will appear, asking you to authorize usage of the application. Select **Accept**, and you will be redirected to a page that displays a code. This code is your temporary authorization code, which will expire after ten minutes.
+The Agenda UI appears, asking you to authorize usage of the application. Select **Accept**, and you are redirected to a page that displays a code. This code is your temporary authorization code, which will expire after ten minutes.
 
 ## Receive access token
 
-Now that you have your temporary authorization code, you will need to exchange this temporary code for an access token.
+Now that you have your temporary authorization code, you must exchange this temporary code for an access token.
 
 You can request an access token by visiting the following URL:
 
