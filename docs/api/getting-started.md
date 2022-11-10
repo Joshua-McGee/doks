@@ -1,6 +1,6 @@
 # Getting started with Agenda APIs
 
-The Ensemble Agenda application is developed with an "API-first" mindset. With the Agenda APIs, you can programmatically perform basic CRUD (Create, Read, Update, Delete) operations against all the various endpoints.
+The Agenda application is developed with an "API-first" mindset. With the Agenda APIs, you can programmatically perform basic CRUD (Create, Read, Update, Delete) operations against all the various endpoints.
 
 The APIs for the Agenda application all share the same set of authentication headers and use similar syntaxes for their CRUD operations. The following guide outlines the necessary steps for getting started with the Agenda APIs.
 

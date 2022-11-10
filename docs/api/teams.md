@@ -4,7 +4,7 @@ Insert blurb describing what teams are.
 
 ## Getting started
 
-The endpoints used in this guide are part of the Ensemble Agenda APIs. Before continuing, please review the [getting started guide](./getting-started.md) for important information that you need to know in order to successfully make calls to the API, including required headers and how to read example APIs.
+The endpoints used in this guide are part of the Agenda APIs. Before continuing, please review the [getting started guide](./getting-started.md) for important information that you need to know in order to successfully make calls to the API, including required headers and how to read example APIs.
 
 ## List teams
 
