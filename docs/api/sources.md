@@ -16,7 +16,6 @@ The `/sources` endpoint supports several query parameters to help filter your re
 
 ```http
 GET /sources
-GET /sources?category={CATEGORY}
 GET /sources?type={TYPE}
 GET /sources?limit={LIMIT}
 GET /sources?page={PAGE}
@@ -24,10 +23,9 @@ GET /sources?page={PAGE}
 
 | Parameter | Description |
 | --------- | ----------- |
-| `{CATEGORY}` | The category of source you want to filter by. This value can either be `virtual` or `in-person`. |
 | `{TYPE}` | The type of source you want to filter by. This value 
 is **only** used by `virtual` sources. Possible values include `zoom`, `slack`, `teams`, and `skype`. |
-| `{LIMIT}` | Specifies the number of sources returned. | 
+| `{LIMIT}` | Specifies the number of sources returned per page. | 
 | `{PAGE}` | Specifies the offset of the pages of sources returned. |
 
 ### Request
@@ -48,16 +46,16 @@ A successful response returns HTTP status 200 with a list of sources based on th
 {
     "records": [
         {
-            "name": "Solis",
-            "category": "in-person",
+            "name": "Teams meeting",
             "id": 8,
-            "createdBy": 1,
+            "url": "{TEAMS_LINK}",
+            "type": "teams",
+            "createdBy": 35,
             "createdAt": 1639498959,
             "updatedAt": 1639498959
         },
         {
             "name": "Pierre's Zoom",
-            "category": "virtual",
             "id": 9,
             "url": "{ZOOM_LINK}",
             "type": "zoom",
@@ -72,8 +70,7 @@ A successful response returns HTTP status 200 with a list of sources based on th
 | Property | Description |
 | -------- | ----------- |
 | `name` | The name of the source. |
-| `category` | The category for the source. This value can either be `virtual` for online meetings or `in-person` for in-person meetings. | 
-| `type` | The type for the source. Possible values include `zoom`, `teams`, `slack`, and `skype`. This value is **only** returned for sources in the `virtual` category. 
+| `type` | The type for the source. Possible values include `zoom`, `teams`, `slack`, and `skype`. |
 | `createdBy` | The ID of the user who created the source. |
 | `createdAt` | The date and time that the source was created. This is represented as a UNIX epoch timestamp. |
 | `updatedAt` | The date and time that the source was updated. This is represented as a UNIX epoch timestamp. |
@@ -91,20 +88,7 @@ POST /sources
 
 ### Request
 
-The following request will create a new in-person source for the company.
-
-```shell
-curl -X POST https://api.agenda.com/sources \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer {ACCESS_TOKEN}' \
--H 'Client-ID: {API_KEY}' \
--d '{
-    "name": "Astrum",
-    "category": "in-person"
-}'
-```
-
-The following request will create a new virtual source for the company.
+The following request will create a new source for the company.
 
 ```shell
 curl -X POST https://api.agenda.com/sources \
@@ -113,7 +97,6 @@ curl -X POST https://api.agenda.com/sources \
 -H 'Client-ID: {API_KEY}' \
 -d '{
     "name": "Documentation team Zoom",
-    "category": "virtual",
     "type": "zoom"
 }'
 ```
@@ -123,14 +106,121 @@ curl -X POST https://api.agenda.com/sources \
 A successful response returns HTTP status 200 with the newly created source.
 
 ```json
-
+{
+    "name": "Documentation team Zoom",
+    "id": 13,
+    "url": "{ZOOM_URL}",
+    "type": "zoom",
+    "createdAt": 1668046477,
+    "updatedAt": 1668046477
+}
 ```
 
 ## Retrieve a specific source
 
+You can retrieve a specific source for your company by making a GET request to the `/sources` endpoint and providing the ID of the source you want to retrieve in the request path.
+
+### API format
+
+```http
+GET /sources/{SOURCE_ID}
+```
+
+| Parameter | Description |
+| --------- | ----------- |
+| `{SOURCE_ID}` | The `id` of the source you want to retrieve.
+
+### Request
+
+```shell
+curl -X GET https://api.agenda.com/sources/13 \
+-H 'Authorization: Bearer {ACCESS_TOKEN}' \
+-H 'Client-ID: {API_KEY}'
+```
+
+### Response
+
+A successful response returns HTTP status 200 with information about the requested source.
+
+```json
+{
+    "name": "Documentation team Zoom",
+    "id": 13,
+    "url": "{ZOOM_URL}",
+    "type": "zoom",
+    "createdAt": 1668046477,
+    "updatedAt": 1668046477
+}
+```
+
 ## Update a source
 
+You can update a specific source for your company by making a PATCH request to the `/sources` endpoint and providing the ID of the source you want to update in the request path.
+
+### API format
+
+```http
+PATCH /sources/{SOURCE_ID}
+```
+
+| Parameter | Description |
+| --------- | ----------- |
+| `{SOURCE_ID}` | The `id` of the source you want to update.
+
+### Request
+
+The following request updates the source name from "Documentation team Zoom" to "Documentation Team Standup Zoom".
+
+```shell
+curl -X PATCH https://api.agenda.com/sources/13 \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer {ACCESS_TOKEN}' \
+-H 'Client-ID: {API_KEY}' \
+-d '{
+    "name": "Documentation Team Standup Zoom"
+}'
+```
+
+### Response
+
+A successful response returns HTTP status 200 with details about your newly updated source.
+
+```json
+{
+    "name": "Documentation Team Standup Zoom",
+    "id": 13,
+    "url": "{ZOOM_URL}",
+    "type": "zoom",
+    "createdAt": 1668046477,
+    "updatedAt": 1668047781
+}
+```
+
 ## Delete a source
+
+You can delete a specific source for your company by making a DELETE request to the `/sources` endpoint and providing the ID of the source you want to delete in the request path.
+
+### API format
+
+```http
+DELETE /sources/{SOURCE_ID}
+```
+
+| Parameter | Description |
+| --------- | ----------- |
+| `{SOURCE_ID}` | The `id` of the source you want to delete.
+
+### Request
+
+```shell
+curl -X DELETE https://api.agenda.com/sources/13 \
+-H 'Authorization: Bearer {ACCESS_TOKEN}' \
+-H 'Client-ID: {API_KEY}'
+```
+
+### Response
+
+A successful response returns HTTP status 204 (No Content) and a blank body.
 
 ## Next steps
 

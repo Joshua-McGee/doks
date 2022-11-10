@@ -18,8 +18,8 @@ The `/meetings` endpoint supports several query parameters to help filter your r
 GET /meetings
 GET /meetings?source-id={SOURCE_ID}
 GET /meetings?source-name={SOURCE_NAME}
-GET /meetings?source-category={SOURCE_CATEGORY}
 GET /meetings?source-type={SOURCE_TYPE}
+GET /meetings?location={LOCATION}
 GET /meetings?team-id={TEAM_ID}
 GET /meetings?team-name={TEAM_NAME}
 GET /meetings?limit={LIMIT}
@@ -30,8 +30,8 @@ GET /meetings?page={PAGE}
 | --------- | ----------- |
 | `{SOURCE_ID}` | The ID of the source that you want to filter by. |
 | `{SOURCE_NAME}` | The name of the source that you want to filter by. |
-| `{SOURCE_CATEGORY}` | The category of source you want to filter by. This value can either be `virtual` or `in-person`. To learn more about sources, please read the [sources endpoint guide](./sources.md). |
-| `{SOURCE_TYPE}` | The type of source you want to filter for. This value is **only** used by `virtual` sources. Possible values include `zoom`, `slack`, `teams`, and `skype`. To learn more about sources, please read the [sources endpoint guide](./sources.md). |
+| `{SOURCE_TYPE}` | The type of source you want to filter for. Possible values include `zoom`, `slack`, `teams`, and `skype`. To learn more about sources, please read the [sources endpoint guide](./sources.md). |
+| `{LOCATION}` | The location of the meeting that you want to filter for. The location parameter corresponds to an **in-person** location. |
 | `{TEAM_ID}` | The ID of the team that you want to filter for. To learn more about teams, please read the [teams endpoint guide](./teams.md). |
 | `{TEAM_NAME}` | The name of the team that you want to filter for. To learn more about teams, please read the [teams endpoint guide](./teams.md).  | 
 | `{LIMIT}` | Specifies the number of meetings returned per page. | 
@@ -56,11 +56,7 @@ A successful response returns HTTP status 200 with a list of meetings based on t
     "records": [
         {
             "id": 369,
-            "source": {
-                "name": "Solis",
-                "category": "in-person",
-                "id": 8
-            },
+            "location": "Solis",
             "invitees": [
                 {
                     "name": "Stephen Chan",
@@ -79,7 +75,7 @@ A successful response returns HTTP status 200 with a list of meetings based on t
                     "id": 35
                 },
                 {
-                    "name":"Kyouko Sakura",
+                    "name": "Kyouko Sakura",
                     "email": "kyoukos@agenda.com",
                     "external": false,
                     "status": "accepted",
@@ -87,7 +83,7 @@ A successful response returns HTTP status 200 with a list of meetings based on t
                     "id": 40
                 },               
                 {
-                    "name":"Dmitry Podkolzin",
+                    "name": "Dmitry Podkolzin",
                     "email": "dmitryp@agenda.com",
                     "external": false,
                     "status": "accepted",
@@ -95,7 +91,7 @@ A successful response returns HTTP status 200 with a list of meetings based on t
                     "id": 79
                 },
                 {
-                    "name":"Jessica Smith",
+                    "name": "Jessica Smith",
                     "email": "jessicas@agenda.com",
                     "external": false,
                     "status": "accepted",
@@ -121,7 +117,6 @@ A successful response returns HTTP status 200 with a list of meetings based on t
             "id": 365,
             "source": {
                 "name": "Pierre's Zoom",
-                "category": "virtual",
                 "id": 9,
                 "url": "{ZOOM_LINK}",
                 "type": "zoom"
@@ -145,7 +140,7 @@ A successful response returns HTTP status 200 with a list of meetings based on t
                     "id": 35
                 },
                 {
-                    "name":"Kyouko Sakura",
+                    "name": "Kyouko Sakura",
                     "email": "kyoukos@agenda.com",
                     "external": false,
                     "status": "accepted",
@@ -153,7 +148,7 @@ A successful response returns HTTP status 200 with a list of meetings based on t
                     "id": 40
                 },               
                 {
-                    "name":"Dmitry Podkolzin",
+                    "name": "Dmitry Podkolzin",
                     "email": "dmitryp@agenda.com",
                     "external": false,
                     "status": "accepted",
@@ -161,7 +156,7 @@ A successful response returns HTTP status 200 with a list of meetings based on t
                     "id": 79
                 },
                 {
-                    "name":"Jessica Smith",
+                    "name": "Jessica Smith",
                     "email": "jessicas@agenda.com",
                     "external": false,
                     "status": "accepted",
@@ -203,11 +198,11 @@ A successful response returns HTTP status 200 with a list of meetings based on t
 | Property | Description |
 | -------- | ----------- |
 | `id` | The ID of the meeting. |
+| `location` | The location of the meeting. This corresponds with an in-person location. |
 | `source` | An object that contains details about the meeting's location. |
 | `source.name` | The name of the source. |
-| `source.category` | The category of the source. This value can either be `virtual` for online sources or `in-person` for in-person sources (such as meeting rooms). |
-| `source.type` | The type of the source. Possible values include `zoom`, `teams`, `slack`, and `skype`. This value is **only** returned for sources in the `virtual` category. 
-| `source.url` | The URL for the source. This value is **only** returned for sources in the `virtual` category.
+| `source.type` | The type of the source. Possible values include `zoom`, `teams`, `slack`, and `skype`. |
+| `source.url` | The URL for the source. |
 | `source.id` | The ID of the source. |
 | `invitees` | An array of people invited to the meeting. |
 | `invitees.[*].name` | The name of the person invited. |
@@ -241,6 +236,10 @@ POST /meetings
 
 ### Request
 
+#### Virtual meeting
+
+The following request creates a new meeting that will be taking place online.
+
 ```shell
 curl -X POST https://api.agenda.com/meetings \
 -H 'Content-Type: application/json' \
@@ -269,6 +268,38 @@ curl -X POST https://api.agenda.com/meetings \
 | `meetingTime` | The date and time for the meeting. This is represented as a UNIX epoch timestamp. |
 | `duration` | The length of time the meeting will last for. This value is represented in **seconds**. |
 
+#### In-person meeting
+
+The following request creates a new meeting that will be taking place in person.
+
+```shell
+curl -X POST https://api.agenda.com/meetings \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer {ACCESS_TOKEN}' \
+-H 'Client-ID: {API_KEY}' \
+-d '{
+    "location": "Luna",
+    "invitees": [
+        "conradl@agenda.com", "chrish@dahliacorp.com", "adab@dahliacorp.com"
+    ]
+    "team": 7,
+    "title": "Documentation enhancements",
+    "topic: "A meeting to discuss enhancements to the Agenda documentation.",
+    "meetingTime": 1668078000,
+    "duration": 2700
+}'
+```
+
+| Property | Description |
+| -------- | ----------- |
+| `location` | The location that the meeting will take place. |
+| `invitees` | An array of email addresses that correspond with the people you want to invite to the meeting. If `team` is not provided, this value is required. Otherwise, this value is optional. |
+| `team` | The ID of the team you want to invite to the meeting. If `invitees` is not provided, this value is required. Otherwise, this value is optional. |
+| `title` | The title of the meeting you want to create. |
+| `topic` | The topic of the meeting you want to create. |
+| `meetingTime` | The date and time for the meeting. This is represented as a UNIX epoch timestamp. |
+| `duration` | The length of time the meeting will last for. This value is represented in **seconds**. |
+
 ### Response
 
 A successful response returns HTTP status 201 with details about your newly created meeting.
@@ -278,7 +309,6 @@ A successful response returns HTTP status 201 with details about your newly crea
     "id": 387,
     "source": {
         "name": "Pierre's Zoom",
-        "category": "virtual",
         "id": 9,
         "url": "{ZOOM_LINK}",
         "type": "zoom"
@@ -302,7 +332,7 @@ A successful response returns HTTP status 201 with details about your newly crea
             "id": 35
         },
         {
-            "name":"Kyouko Sakura",
+            "name": "Kyouko Sakura",
             "email": "kyoukos@agenda.com",
             "external": false,
             "status": "pending",
@@ -310,7 +340,7 @@ A successful response returns HTTP status 201 with details about your newly crea
             "id": 40
         },               
         {
-            "name":"Dmitry Podkolzin",
+            "name": "Dmitry Podkolzin",
             "email": "dmitryp@agenda.com",
             "external": false,
             "status": "pending",
@@ -318,7 +348,7 @@ A successful response returns HTTP status 201 with details about your newly crea
             "id": 79
         },
         {
-            "name":"Jessica Smith",
+            "name": "Jessica Smith",
             "email": "jessicas@agenda.com",
             "external": false,
             "status": "pending",
@@ -422,7 +452,6 @@ A successful response returns HTTP status 200 with information about the request
     "id": 387,
     "source": {
         "name": "Pierre's Zoom",
-        "category": "virtual",
         "id": 9,
         "url": "{ZOOM_LINK}",
         "type": "zoom"
@@ -446,7 +475,7 @@ A successful response returns HTTP status 200 with information about the request
             "id": 35
         },
         {
-            "name":"Kyouko Sakura",
+            "name": "Kyouko Sakura",
             "email": "kyoukos@agenda.com",
             "external": false,
             "status": "pending",
@@ -454,7 +483,7 @@ A successful response returns HTTP status 200 with information about the request
             "id": 40
         },               
         {
-            "name":"Dmitry Podkolzin",
+            "name": "Dmitry Podkolzin",
             "email": "dmitryp@agenda.com",
             "external": false,
             "status": "pending",
@@ -462,7 +491,7 @@ A successful response returns HTTP status 200 with information about the request
             "id": 79
         },
         {
-            "name":"Jessica Smith",
+            "name": "Jessica Smith",
             "email": "jessicas@agenda.com",
             "external": false,
             "status": "pending",
@@ -536,7 +565,6 @@ A successful response returns HTTP status 200 with details about your newly upda
     "id": 387,
     "source": {
         "name": "Pierre's Zoom",
-        "category": "virtual",
         "id": 9,
         "url": "{ZOOM_LINK}",
         "type": "zoom"
@@ -560,7 +588,7 @@ A successful response returns HTTP status 200 with details about your newly upda
             "id": 35
         },
         {
-            "name":"Kyouko Sakura",
+            "name": "Kyouko Sakura",
             "email": "kyoukos@agenda.com",
             "external": false,
             "status": "pending",
@@ -568,7 +596,7 @@ A successful response returns HTTP status 200 with details about your newly upda
             "id": 40
         },               
         {
-            "name":"Dmitry Podkolzin",
+            "name": "Dmitry Podkolzin",
             "email": "dmitryp@agenda.com",
             "external": false,
             "status": "pending",
@@ -576,7 +604,7 @@ A successful response returns HTTP status 200 with details about your newly upda
             "id": 79
         },
         {
-            "name":"Jessica Smith",
+            "name": "Jessica Smith",
             "email": "jessicas@agenda.com",
             "external": false,
             "status": "pending",
@@ -606,7 +634,7 @@ A successful response returns HTTP status 200 with details about your newly upda
     "title": "Documentation enhancements",
     "topic": "A meeting to discuss enhancements to the Agenda documentation.",
     "createdAt": 1667810258,
-    "updatedAt": 1667810258,
+    "updatedAt": 1667817461,
     "meetingTime": 1668079800,
     "duration": 3600,
     "createdBy": 35
@@ -615,7 +643,7 @@ A successful response returns HTTP status 200 with details about your newly upda
 
 ## Delete a meeting
 
-You can retrieve a specific meeting for your company by making a DELETE request to the `/meetings` endpoint and providing the ID of the meeting you want to delete in the request path.
+You can delete a specific meeting for your company by making a DELETE request to the `/meetings` endpoint and providing the ID of the meeting you want to delete in the request path.
 
 ### API format
 
