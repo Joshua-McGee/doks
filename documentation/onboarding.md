@@ -6,9 +6,11 @@ This document guides you through the installation process on your device, creati
 
 ## System requirements
 
+The sections below outline the system requirements for Agenda depending on whether you are using [Windows] or [MacOS].
+
 ### Windows system requirements
 
-Below are a list of hardware requirements for installing the Agenda application on a Windows machine:
+Below is a list of hardware requirements for installing the Agenda application on a Windows machine:
 
 | Component | Requirement |
 | --- | --- |
@@ -28,142 +30,123 @@ Below are a list of hardware requirements for installing the Agenda application 
 | Memory | 4.0 GB RAM |
 | Hard disk | 1.5 GB of available disk space |
 
-## Windows install
+## Installation
 
-The Agenda application is compatible with Windows and is compatible with the Windows 10 and Windows 11 operating systems.
+Below are the installation steps for:
+* [Windows](#windows)
+* [MacOS](#mac)
 
->[!NOTE] 
->
->You can use any web browser to download the app.
+### Windows install {#windows}
 
-To download the Agenda desktop client on Windows:
+The Agenda application is compatible with the Windows 10 and Windows 11 operating systems.
 
-Navigate to https://www.example.agenda.ca/download-app. This is the official Agenda download site.
+Using the web browser of your choice, navigate to [the official Agenda download site](https://www.example.agenda.ca/download-app) to download the Agenda desktop client on Windows. This is the official Agenda download site.
 
-Select the **[!UICONTROL Download]** button that corresponds to the operating system you are using, Windows 10 or Windows 11. 
+Select **[!UICONTROL Download]** under the corresponding section for the operating system you are using (Windows 10 or Windows 11).
 
-![Image showing the download site highlighting the Windows 10 and Windows 11 download button](./images/onboarding/download-center-windows.png)
+![The download site, with the Windows 10 and Windows 11 download buttons highlighted.](./images/onboarding/download-center-windows.png)
 
 This opens a [!UICONTROL Save as] dialog. Select a location to save the downloaded file and then select **[!UICONTROL Save]**.
 
-![Image showing the Windows save as dialog](./images/onboarding/save-as.png)
+![The Windows save as dialog, with the save button highlighted.](./images/onboarding/save-as.png)
 
-The file is successfully downloaded. Navigate to the download location and select the downloaded installer. 
+The file is successfully downloaded. Navigate to the download location and select the installer. 
 
-![Image showing the downloaded installer in the downloaded location](./images/onboarding/launch-installer.png)
+![The downloaded installer in the download location.](./images/onboarding/launch-installer.png)
 
-You will be prompted by a [!UICONTROL User Account Control] dialog box requesting access to make changes to your system, select **[!UICONTROL Yes]** to proceed.
+You will be prompted by a [!UICONTROL User Account Control] dialog box requesting access to make changes to your system. Select **[!UICONTROL Yes]** to proceed.
 
-![Image showing the User Account Control dialog highlighting the Yes button](./images/onboarding/user-account-control.png)
+![The User Account Control dialog highlighting the yes button.](./images/onboarding/user-account-control.png)
 
 The installation process begins. Allow a few minutes for the installation to complete.
 
-![Image showing the install status bar](./images/onboarding/installing.png)
+![The install status bar, showing the progression bar.](./images/onboarding/installing.png)
 
 Agenda is successfully installed on the system and a shortcut icon is created on the desktop.
 
-![Image showing the desktop shortcut](./images/onboarding/desktop-shortcut.png)
+![The desktop shortcut on the Windows desktop.](./images/onboarding/desktop-shortcut.png)
 
-Please see the section on MacOS install for more information on how to download and install the desktop client to a Mac machine.
+[Skip ahead to creating an account](#create)
 
-## MacOS install
+### MacOS install {#mac}
 
 The Agenda application is compatible with MacOS and can be installed on the MacOS Catalina and newer operating systems.
 
->[!NOTE] 
->
->You can use any web browser to download the app.
+Using the web browser of your choice, navigate to [the official Agenda download site](https://www.example.agenda.ca/download-app) to download the Agenda desktop client on MacOS. This is the official Agenda download site.
 
-To download the Agenda desktop client on MacOS:
+Select **[!UICONTROL Download]** under the corresponding section for the MacOS operating system.
 
-Navigate to https://www.example.agenda.ca/download-app. This is the official Agenda download site.
+![The download site, with the MacOS download button highlighted.](./images/onboarding/download-center-mac.png)
 
-Select the **[!UICONTROL Download]** button for MacOS. 
+The file is downloaded and saved to your machine.
 
-![Image showing the download site highlighting the MacOS download button](./images/onboarding/download-center-mac.png)
+Navigate to the **Downloads** folder (or your alternate downloads folder if you changed the default) and select the installer.
 
-The file is downoaded and saved to your machine.
->[!NOTE]
->
->The default destination for downloads on a Mac is the **Downloads** folder.
+![The downloaded installer in the download location.](./images/onboarding/launch-installer-mac.png)
 
-Navigate to the Downloads folder and select the downloaded installer.
+The installer dialog opens. Follow the installer's instructions until you arrive at the Installation step. Enter your administrator details (Username and Password) for your device and select **[!UICONTROL Install Software]**.
 
-![Image showing the downloaded installer in the Downloads folder](./images/onboarding/launch-installer-mac.png)
-
-The installer dialog opens the [!UICONTROL Install] dialog on the **Introduction** tab. Select **[!UICONTROL Continue]**.
-
-![Image showing the installer dialog on the Introduction tab highlighting the Continue button](./images/onboarding/installer-intro.png)
-
-You are taken to the **Installation Type** tab where you can see how much space is required to install the application. Select **[!UICONTROL Install]**.
-
-![Image showing the installer dialog on the Installation Type tab highlighting the Install button](./images/onboarding/installer-installation-type.png)
-
-You are presented with the installer credentials dialog box. Enter the administrator credentials (Username and Password) for your device and select **[!UICONTROL Install Software]**.
-
-![Image showing the installer credentials dialog highlighting the Install Software button](./images/onboarding/installer-credentials.png)
+![The installer credentials dialog, with the Install Software button highlighted.](./images/onboarding/installer-credentials.png)
 
 Allow a few minutes for the installation to complete. A dialog appears confirming the installation was successful. Select **[!UICONTROL Close]**.
 
-![Image showing the installer dialog on the Summary tab confirming installation was successful highlighting the Close button](./images/onboarding/installation-successful.png)
+![The installer dialog on the Summary tab confirming installation was successful, with the Close button highlighted.](./images/onboarding/installation-successful.png)
 
-The Agenda app is now available in the **Launchpad**.
+The Agenda app is now available in Launchpad.
 
-![Image showing the Agenda app in the Launchpad](./images/onboarding/launchpad.png)
+![The Agenda app icon in the Launchpad](./images/onboarding/launchpad.png)
 
-## Create an account
+[Skip ahead to creating an account](#create)
 
-An Agenda account gives you access to many Agenda products. With an Agenda account you can do the following:
+## Create an account {#create}
 
-* Manage meetings
+An Agenda account gives you access to all of its features. With an Agenda account you can do the following:
+
+* Manage meetings and huddles
 * Manage teams
 * Integrate external calendars
 * Manage multiple calendars in one space
 
-To create a new account:
+To create a new account, navigate to the desktop application and select to open. On the sign-in screen that appears, select **[!UICONTROL Create an account]**.
 
-Navigate to the desktop application and select to open. The sign in screen appears. Select **[!UICONTROL Create an account]** on the right side of the screen.
+![The Agenda desktop app Sign-In screen, with the Create and account button highlighted.](./images/onboarding/create-an-account.png)
 
-![Image showing the Agenda desktop app Sign-In screen highlighting the Create and account button](./images/onboarding/create-an-account.png)
+Enter your name and email address, then choose a password and confirm that same password before selecting **[!UICONTROL Create account]**.
 
-The **[!UICONTROL Create an account]** screen appears. Enter your name, email address, password, and confirm your password. Select **[!UICONTROL Create account]** to complete the account creation process.
+![The Create an account screen, with required fields and the Create a account button highlighted.](./images/onboarding/complete-create-account.png)
 
-![Image showing the Create an acocunt screen highlighting required fields and the Createa account button](./images/onboarding/complete-create-account.png)
+If successful, you are given confirmation that the account is created. Select **[UICONTROL Close]** and you are returned to the **Sign In** screen.
 
-Confirmation of successful account creation appears. Select **[UICONTROL Close]** and you are returned to the **Sign In** screen.
-
-![Image showing the successful account creation dialog highlighting the Close button](./images/onboarding/account-creation-successful.png)
+![The successful account creation dialog, with the Close button highlighted.](./images/onboarding/account-creation-successful.png)
 
 ## Integrate an external calendar
 
-In Agenda you can integrate an external calendar allowing you to import and sync events and manage these from a single space.
+You can integrate external calendars into Agenda, allowing you to import and sync events and manage these from a single space.
 
-To integrate an external calendar:
+To integrate an external calendar, log into the Agenda application and select **[!UICONTROL Sources]** from the top navigation, then select **[!UICONTROL Add Calendar sources]** from the left navigation.
 
-Log into the Agenda application and select the **[!UICONTROL Sources]** tab from the top navigation, then select **[!UICONTROL Add Calendar sources]** from the left navigation.
+![The Sources tab, with Calendar sources selected.](./images/onboarding/calendar-sources.png)
 
-![Image highlighting the Sources tab and Calendar sources selected](./images/onboarding/calendar-sources.png)
+A list of available sources is displayed. Find the service provider for your account and select **[!UICONTROL Connect]**.
 
-A list of available sources is displayed. Find the service provider for your account and select connect.
+![Calendar sources, with a calendar source highlighted.](./images/onboarding/select-source.png)
 
-![Image highlighting the calendar source selection](./images/onboarding/select-source.png)
+Enter your account's email address and password within the login dialog, then select **[UICONTROL Connect]**.
 
-A login dialog appears. Enter your email address and password for the account and then select **[UICONTROL Connect]**.
+![The calendar source login dialog box, with the Connect button highlighted.](./images/onboarding/calendar-source-login.png)
 
-![Image showing the calendar source login dialog box higlighting the Connect button](./images/onboarding/calendar-source-login.png)
+A list of calendars associated with the account appear. Select the check box beside the name of each calendar that you would like to import, then select **[!UICONTROL Import calendars]**.
 
-A list of calendars associated with that account appear. Select the calendars that you would like to import by selecting the check box beside the calendars name, the select **[!UICONTROL Import calendars]**.
+![The calendars available for import, with the calendar check boxes and Import calendars button highlighted.](./images/onboarding/select-calendars.png)
 
-![Image showing the calendars available for import highlighting the check boxes and Import calendars button](./images/onboarding/select-calendars.png)
+A message confirms that the calendars have been imported successfully. Select **[UICONTROL Close]** and you are returned to the **[!UICONTROL Sources]** tab.
 
-Confirmation of successful import appears. Select **[UICONTROL Close]** and you are returned to the **[!UICONTROL Sources]** tab.
+![The successful calendar import dialog, with the Close button highlighted.](./images/onboarding/import-calendars-successful.png)
 
-![Image showing the successful calendar import dialog highlighting the Close button](./images/onboarding/import-calendars-successful.png)
-
-Your calendars will now appear in the **[!UICONTROL Calendar]** tab.
+Your calendars will now appear in the **[!UICONTROL Calendar]** tab, where they can be used to add reminders, schedule meetings, and so on.
 
 ## Next steps
 
-By reading this document, you have successfully downloaded the Agenda desktop client to your machine, created and account, and integrated an external calendar. See the following documents for more information: 
+By reading this document, you have successfully downloaded the Agenda desktop client to your machine, created an account, and integrated an external calendar. See the following documents for more information: 
 
 * [Agenda overview](./overview.md).
