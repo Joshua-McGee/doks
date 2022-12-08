@@ -24,15 +24,15 @@ author:
 
 # Info boxes on the homepage used to navigate between pages.
 grid_navigation:
-    - title: How to write overview documenation
+    - title: How to write overview documentation
       excerpt: Learn about what goes into writing a good overview document.
       cta: Read more
       url: '/ensemble-overview'
-    - title: How to write UI documenation
+    - title: How to write UI documentation
       excerpt: Learn about what goes into writing a good UI document.
       cta: Read more
       url: '/ensemble-UI'
-    - title: How to write API documenation
+    - title: How to write API documentation
       excerpt: Learn about what goes into writing a good API document.
       cta: Read more
       url: '/ensemble-API'
@@ -40,11 +40,11 @@ grid_navigation:
       excerpt: Learn about how Agenda can help your company
       cta: Read more
       url: '/Overview'
-    - title: Agenda UI documenation
+    - title: Agenda UI documentation
       excerpt: Learn how to use the Agenda UI to create teams, schedule meetings, and more.
       cta: Read more
       url: '/UI'
-    - title: Agenda API documenation
+    - title: Agenda API documentation
       excerpt: Learn how to use the Agenda API to pull data, statistics, generate XML files, and more.
       cta: Read more
       url: '/API'
