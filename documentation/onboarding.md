@@ -6,9 +6,9 @@ This document guides you through the installation process on your device, creati
 
 ## System requirements
 
-The sections below outline the system requirements for Agenda depending on whether you are using [Windows] or [MacOS].
+The sections below outline the system requirements for Agenda depending on whether you are using [Windows](#windows) or [MacOS](#mac).
 
-### Windows system requirements
+### Windows {#windows}
 
 Below is a list of hardware requirements for installing the Agenda application on a Windows machine:
 
@@ -19,7 +19,7 @@ Below is a list of hardware requirements for installing the Agenda application o
 | Memory | 4.0 GB RAM |
 | Hard disk | 3.0 GB of available disk space |
 
-### MacOS system requirements
+### MacOS {#mac}
 
 Below are a list of hardware requirements for installing the Agenda application on a Mac machine:
 
@@ -32,17 +32,16 @@ Below are a list of hardware requirements for installing the Agenda application 
 
 ## Installation
 
-Below are the installation steps for:
-* [Windows](#windows)
-* [MacOS](#mac)
+This section covers the installation steps for the application. Refer to the appropriate subsection for your operating system for details:
 
-### Windows install {#windows}
+* [Windows](#windows-install)
+* [MacOS](#mac-install)
+
+### Windows {#windows-install}
 
 The Agenda application is compatible with the Windows 10 and Windows 11 operating systems.
 
-Using the web browser of your choice, navigate to [the official Agenda download site](https://www.example.agenda.ca/download-app) to download the Agenda desktop client on Windows. This is the official Agenda download site.
-
-Select **[!UICONTROL Download]** under the corresponding section for the operating system you are using (Windows 10 or Windows 11).
+Using the web browser of your choice, navigate to [the official Agenda download site](https://www.example.agenda.ca/download-app) to download the Agenda desktop client on Windows. Select **[!UICONTROL Download]** under the corresponding section for the operating system you are using (Windows 10 or Windows 11).
 
 ![The download site, with the Windows 10 and Windows 11 download buttons highlighted.](./images/onboarding/download-center-windows.png)
 
@@ -66,15 +65,13 @@ Agenda is successfully installed on the system and a shortcut icon is created on
 
 ![The desktop shortcut on the Windows desktop.](./images/onboarding/desktop-shortcut.png)
 
-[Skip ahead to creating an account](#create)
+You can now proceed to the next step, [creating an account](#create)
 
-### MacOS install {#mac}
+### MacOS install {#mac-install}
 
 The Agenda application is compatible with MacOS and can be installed on the MacOS Catalina and newer operating systems.
 
-Using the web browser of your choice, navigate to [the official Agenda download site](https://www.example.agenda.ca/download-app) to download the Agenda desktop client on MacOS. This is the official Agenda download site.
-
-Select **[!UICONTROL Download]** under the corresponding section for the MacOS operating system.
+Using the web browser of your choice, navigate to [the official Agenda download site](https://www.example.agenda.ca/download-app) to download the Agenda desktop client on MacOS.Select **[!UICONTROL Download]** under the corresponding section for the MacOS operating system.
 
 ![The download site, with the MacOS download button highlighted.](./images/onboarding/download-center-mac.png)
 
@@ -96,11 +93,9 @@ The Agenda app is now available in Launchpad.
 
 ![The Agenda app icon in the Launchpad](./images/onboarding/launchpad.png)
 
-[Skip ahead to creating an account](#create)
-
 ## Create an account {#create}
 
-An Agenda account gives you access to all of its features. With an Agenda account you can do the following:
+An Agenda account gives you access to all the app's features. With an Agenda account you can do the following:
 
 * Manage meetings and huddles
 * Manage teams
@@ -121,7 +116,7 @@ If successful, you are given confirmation that the account is created. Select **
 
 ## Integrate an external calendar
 
-You can integrate external calendars into Agenda, allowing you to import and sync events and manage these from a single space.
+You can integrate external calendars into Agenda, allowing you to import and sync events while managing them from a single space.
 
 To integrate an external calendar, log into the Agenda application and select **[!UICONTROL Sources]** from the top navigation, then select **[!UICONTROL Add Calendar sources]** from the left navigation.
 
@@ -149,4 +144,4 @@ Your calendars will now appear in the **[!UICONTROL Calendar]** tab, where they 
 
 By reading this document, you have successfully downloaded the Agenda desktop client to your machine, created an account, and integrated an external calendar. See the following documents for more information: 
 
-* [Agenda overview](./overview.md).
+* [Agenda overview](./overview.md)
