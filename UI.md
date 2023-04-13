@@ -29,3 +29,30 @@ page_nav:
 ---
 
 ## Write your markdown here ...
+
+# Agenda User Interface (UI) guide
+
+This guide serves as an introduction to using the Agenda user interface (UI), explaining what the various components are used for and provides links to further documentation for more information.
+
+To learn more about Agenda, please read the [Agenda Overview](link-here).
+
+## Home page
+
+- View your calendar displaying list of all upcoming meetings.
+- Select a meeting to expand and view further details (Description, Attendees).
+- Can submit a reschedule request.
+- One click to schedule new meeting, create new team, or add new source.
+- Navigate to Teams or Sources.
+
+## Create a new meeting
+
+- Schedule a new meeting from the homepage view by selecting the plus sign widget > New Meeting, and following the provided steps. 
+
+## Teams
+
+- View/search teams (team name and number of members) based off of the selected search/filtering criteria.
+- Select a team to expand/view further team details (Team members, roles).
+
+### Create a new team
+
+## Sources
