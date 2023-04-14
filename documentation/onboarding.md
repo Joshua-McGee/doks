@@ -2,7 +2,7 @@
 
 The Agenda application connects to external scheduling applications like Microsoft Outlook Calendar, Google Calendar, or Zoom, and merges their independent meeting data into one place. By consolidating team member availability into one simplified workspace, you can quickly schedule meetings that work well for everyone. 
 
-This document guides you through the installation process on your device, creating a new account, and linking an external calendar.
+This document covers how to install the app on your device, create a new account, and link an external calendar.
 
 ## System requirements
 
@@ -21,7 +21,7 @@ Below is a list of hardware requirements for installing the Agenda application o
 
 ### MacOS {#mac}
 
-Below are a list of hardware requirements for installing the Agenda application on a Mac machine:
+Below is a list of hardware requirements for installing the Agenda application on a Mac machine:
 
 | Component | Requirement |
 | --- | --- |
@@ -65,13 +65,13 @@ Agenda is successfully installed on the system and a shortcut icon is created on
 
 ![The desktop shortcut on the Windows desktop.](./images/onboarding/desktop-shortcut.png)
 
-You can now proceed to the next step, [creating an account](#create)
+You can now proceed to the next step of [creating an account](#create).
 
 ### MacOS install {#mac-install}
 
 The Agenda application is compatible with MacOS and can be installed on the MacOS Catalina and newer operating systems.
 
-Using the web browser of your choice, navigate to [the official Agenda download site](https://www.example.agenda.ca/download-app) to download the Agenda desktop client on MacOS.Select **[!UICONTROL Download]** under the corresponding section for the MacOS operating system.
+Using the web browser of your choice, navigate to [the official Agenda download site](https://www.example.agenda.ca/download-app) to download the Agenda desktop client on MacOS. Select **[!UICONTROL Download]** under the corresponding section for the MacOS operating system.
 
 ![The download site, with the MacOS download button highlighted.](./images/onboarding/download-center-mac.png)
 
@@ -134,7 +134,7 @@ A list of calendars associated with the account appear. Select the check box bes
 
 ![The calendars available for import, with the calendar check boxes and Import calendars button highlighted.](./images/onboarding/select-calendars.png)
 
-A message confirms that the calendars have been imported successfully. Select **[UICONTROL Close]** and you are returned to the **[!UICONTROL Sources]** tab.
+A message confirms that the calendars have been imported successfully. Select **[UICONTROL Dismiss]** and you are returned to the **[!UICONTROL Sources]** tab.
 
 ![The successful calendar import dialog, with the Close button highlighted.](./images/onboarding/import-calendars-successful.png)
 
