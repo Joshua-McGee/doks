@@ -32,20 +32,20 @@ page_nav:
 
 As remote collaboration becomes more essential for businesses, the available platforms for scheduling meetings are increasing and gaining in complexity. Agenda streamlines how you manage meetings across platforms and teams by combining team member availability and meeting platforms from separate applications into one workspace. Review upcoming meetings in one clean view and seamlessly schedule meetings with your various teams through a simplified scheduling workflow.
 
-Agenda connects to external scheduling applications such as Microsoft Outlook Calendar, Google Calendar, or Zoom, and merges their independent meeting data into one place. By consolidating team member availability into one simplified workspace, you can quickly schedule meetings that work well for everyone. Agenda eliminates the cumbersome process of comparing multiple calendars for team members across various applications.
+Agenda connects to external scheduling applications such as Microsoft Outlook Calendar, Google Calendar, or Zoom, and merges their independent meeting data into one place. By consolidating team member availability into one simplified workspace, you can quickly schedule meetings that work well for everyone. Additionally, Agenda can assist with finding the right people to add to a meeting. Need a lead developers opinion? No problem, use Agendas built in tag feature to find the right person. Big organization with too many results? Further filter your results by software specialty, organization, teams, and other metadata contained within Agenda.
 
-With Agenda, you can:
+With Agenda you can:
 
-- Quickly [view and schedule meetings](link-placeholder).
+- Quickly [view, schedule, and reschedule meetings](link-placeholder).
 - [Create and manage teams](link-placeholder) that suit your organizational needs.
 - [Import calendars and meeting rooms](link-placeholder) from external applications.
 - Connect to your Employee Management System for quick [team onboarding](link-placeholder).
 
-Not sure where to begin? See the [getting started guide](link-placeholder) to learn how to import your first calendar.
+Not sure where to begin? visit the [getting started guide](link-placeholder) to learn how to import your first calendar.
   
 ## How Agenda works
 
-Agenda connects to external calendars and meeting platforms to merge user meeting details into one simplified view, providing a more comprehensive picture of team availability and simplifying the scheduling workflow. With everyone's meeting details available within one space, you can quickly create teams and schedule meetings that work well for all. By using Agenda, you can even create cross-organization teams to further streamline vendor and contract work. No one wants to burn budget trying to find a meeting time that works for everyone through multiple messages and emails.
+Agenda connects to external calendars and meeting platforms to merge user meeting details into one simplified view, providing a more comprehensive picture of team availability and simplifying the scheduling workflow. With everyone's meeting details available within one space, you can quickly create teams and schedule meetings that work well for all. By using Agenda, you can even create cross-organization teams to further streamline vendor and contract work. No one wants to burn budget and time trying to find a meeting time that works for everyone through multiple messages and emails.
 
 You can manage Agenda's capabilities through the simplified [user interface](UI.md) or integrate Agenda with your external applications using the [RESTful API](API.md).
 
