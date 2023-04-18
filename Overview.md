@@ -77,9 +77,9 @@ While Agenda provides an overview of your upcoming schedule from the home screen
 
 ## System architecture
 
-Agenda creates a two-way data pipeline that streams real-time data between external calendar applications to ensure that your team's schedules are always aligned.
+Agenda creates a data pipeline that streams real-time data between external calendar applications to ensure that your team's schedules are always aligned.
 
-![System architecture diagram outlining Agenda's connections and core components. The client connects to the business logic layer, which handles connections with external sources and Agenda's data warehouse](images/overview-system-architecture.png)
+![System architecture diagram outlining Agenda's connections and core components. The client connects to the business logic layer, which handles connections with external sources and Agenda's data warehouse](images/agenda-architecture.png)
 
 Agenda connects to several external scheduling applications and meeting platforms to ingest user meeting data. External meeting data is streamed into Agenda for processing, and is used to update the displayed schedules for each user profile in real time. Meeting information for each user is stored and used to update availability when scheduling new meetings with teams. By making external meeting information available through connected sources, Agenda can suggest the most appropriate meeting times based on each team member's separate schedules.
 
