@@ -83,7 +83,7 @@ Agendas system architecture was built to scale along with your organization. Age
 
 ### Connecting to third party systems
 
-Using a proxy subsystem, Agenda is able to ingest and connect to third party upstream services, transform the data in the client applications, and send the data back downstream. This essentially creates a loop where all your calendar application data is updated and managed within Agendas unified calendar.
+Using a proxy subsystem, Agenda is able to ingest and connect to third party upstream services, transform the data in the client applications, and send the data back downstream. This creates a loop where all your calendar application data is updated and managed within Agendas unified calendar making it possible to create multi organization teams and schedule meetings across applications.
 
 ### Security
 
