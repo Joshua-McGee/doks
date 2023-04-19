@@ -77,21 +77,23 @@ While Agenda provides an overview of your upcoming schedule from the home screen
 
 ## System architecture
 
-Agenda creates a data pipeline that streams real-time data between external calendar applications to ensure that your team's schedules are always aligned.
+Agendas system architecture was built to scale along with your organization. Agenda creates a data pipeline that streams real-time data between external calendar applications to ensure that your team's schedules are always aligned.
 
 ![System architecture diagram outlining Agenda's connections and core components. The client connects to the business logic layer, which handles connections with external sources and Agenda's data warehouse](images/agenda-architecture.png)
 
-Agenda connects to several external scheduling applications and meeting platforms to ingest user meeting data. External meeting data is streamed into Agenda for processing, and is used to update the displayed schedules for each user profile in real time. Meeting information for each user is stored and used to update availability when scheduling new meetings with teams. By making external meeting information available through connected sources, Agenda can suggest the most appropriate meeting times based on each team member's separate schedules.
+### Connecting to third party systems
 
-At a high level, Agenda is comprised of the following major components:
+Using a proxy subsystem, Agenda is able to ingest and connect to third party upstream services, transform the data in the client applications, and send the data back downstream. This essentially creates a loop where all your calendar application data is updated and managed within Agendas unified calendar.
 
-- **Three main views**: Allows you to view and schedule meetings, connect to sources, and manage your teams.
+### Security
 
-- **Data collection and business logic layer**: Where all of the disparate meeting data for users is combined from external sources to provide a singular view of each user's availability. This is where meeting requests are processed, updated, and made available for export back to your connected sources.
+Account security is managed through AWS Cognito securing all the user data outside the client applications. Once logged in, user data is sent to the Configuration UI gateway which then sends a request to the Configuration UI client endpoint to fetch the UI data for said user. Multiple Access tokens are needed for each API call further securing data throughout Agenda.
 
-- **Database**: User profiles and scheduling data are stored in a secure database partition unique to your organization.
+### Configuration Pipeline
 
-- **Source connectors**: Agenda can be connected to a wide variety of external scheduling and meeting applications, such as Google Calendar, Outlook, Slack, and Zoom. Meeting data is then streamed from the connected source into Agenda to be processed and used to update user availability. Agenda can also be configured to send updated meeting information back to selected sources.
+Once Agenda has fetched the required user data from the Configuration UI Client. The Configuration UI Gateway sends a request to the Configuration management service where additional job requests are made to the Internal State Instance, Job scheduler, and Configuration object write function.
+
+This data is then sent to the Configuration CDN Pipeline. The Pipeline passes our Configuration Management Subsystem data to Prerender.io allowing for each of the client applications and all the assets associated with each application to render in near real time.
 
 ## Learn more
 
