@@ -28,13 +28,9 @@ page_nav:
         url: '/API'
 ---
 
-## Write your markdown here ...
+# Agenda Mobile App User Interface (UI) guide
 
-# Agenda User Interface (UI) guide
-
-This guide serves as an introduction to using the Agenda user interface (UI), explaining what the various components are used for and provides links to further documentation for more information.
-
-To learn more about Agenda, please read the [Agenda Overview](link-here).
+This tutorial serves as an introduction to using the Agenda IOS and Android Application user interface (UI). It is expected that you
 
 ## Home page
 
@@ -52,7 +48,14 @@ To learn more about Agenda, please read the [Agenda Overview](link-here).
 
 - View/search teams (team name and number of members) based off of the selected search/filtering criteria.
 - Select a team to expand/view further team details (Team members, roles).
+- Search for users/add users to an existing team
+- Filter users
 
 ### Create a new team
+
+- Give the team a name
+- Provide an optional icon for your team
+- Provide optional tags/description for your team.
+- Add members to your team by searching for names/tags.
 
 ## Sources
