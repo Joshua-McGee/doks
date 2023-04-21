@@ -28,17 +28,27 @@ page_nav:
         url: '/API'
 ---
 
-# Agenda Mobile App User Interface (UI) guide
+# Agenda mobile app user interface (UI) guide
 
-This tutorial serves as an introduction to using the Agenda IOS and Android Application user interface (UI). It is expected that you
+This tutorial serves as an introduction to using the Agenda IOS and Android Application user interface (UI). For information on the Mac OS or Windows application, visit the [Agenda web app user interface (UI) guide](link-needed).
 
-## Home page
+## Calendar page
 
-- View your calendar displaying list of all upcoming meetings.
-- Select a meeting to expand and view further details (Description, Attendees).
-- Can submit a reschedule request.
-- One click to schedule new meeting, create new team, or add new source.
-- Navigate to Teams or Sources.
+Agenda allows data to be ingested from external calendars while providing you with the ability to create, label, sort, and manage meeting data across multiple platforms.
+
+Initially you are greeted with the Agenda Calendar page upon opening the mobile application. The Calendar page displays all your upcoming meetings in order, wether you have accepted the meetings, the time, and a brief description. Additionally, meetings are categorized by a type which determines the image next to the meeting.
+
+![Calendar homepage example](./images/home-page.png)
+
+Selecting a meeting opens up the detailed view of the proposed meeting. Here you can see the full description and additional attendees. 
+
+![Details page](./images/detail-page.png)
+
+### Reschedule a meeting
+
+If by chance you can no longer make a meeting, you also have the option to re-schedule a meeting. Selecting re-schedule opens up the meeting editor where you can suggest a new date/time. Agenda automatically suggests times that work for all folks invited to the meeting, however, you can also choose to select the 'optional' toggle. This makes it so Agenda only suggests times for required individuals.
+
+![Reschedule meeting time UI](ui-is-not-made)
 
 ## Create a new meeting
 
